@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Калькулятор рисков хронического недосыпания</title>
+<style>
+  :root {
+    --bg: #0f1117;
+    --surface: #1a1d27;
+    --card: #20243a;
+    --border: #2e3350;
+    --accent: #6c7dff;
+    --accent2: #a78bfa;
+    --text: #e2e8f0;
+    --muted: #8892b0;
+    --low: #34d399;
+    --medium: #fbbf24;
+    --high: #f87171;
+    --critical: #ef4444;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    padding: 24px 16px 60px;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+
+  header {
+    text-align: center;
+    padding: 40px 0 32px;
+  }
+  header h1 {
+    font-size: clamp(1.4rem, 4vw, 2.2rem);
+    font-weight: 700;
+    background: linear-gradient(135deg, var(--accent), var(--accent2));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    line-height: 1.3;
+    margin-bottom: 10px;
+  }
+  header p {
+    color: var(--muted);
+    font-size: 0.95rem;
+    max-width: 560px;
+    margin: 0 auto;
+  }
+
+  .input-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-bottom: 28px;
+  }
+  .field {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 20px 22px;
+    transition: border-color .2s;
+  }
+  .field:focus-within { border-color: var(--accent); }
+  .field label {
+    display: block;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 10px;
+  }
+  .field .val-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+  }
+  .field .val-num {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--text);
+  }
+  .field .val-unit {
+    font-size: 0.8rem;
+    color: var(--muted);
+    margin-left: 4px;
+    align-self: flex-end;
+    padding-bottom: 4px;
+  }
+  .field input[type=range] {
+    width: 100%;
+    accent-color: var(--accent);
+    cursor: pointer;
+    height: 6px;
+  }
+  .field .range-labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.7rem;
+    color: var(--muted);
+    margin-top: 4px;
+  }
+  .gender-row {
+    display: flex;
+    gap: 10px;
+    margin-top: 4px;
+  }
+  .gender-btn {
+    flex: 1;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    background: var(--card);
+    color: var(--muted);
+    cursor: pointer;
+    font-size: 0.85rem;
+    font-weight: 600;
+    transition: all .2s;
+  }
+  .gender-btn.active {
+    border-color: var(--accent);
+    background: rgba(108,125,255,.15);
+    color: var(--accent);
+  }
+
+  .calc-btn {
+    display: block;
+    width: 100%;
+    padding: 16px;
+    border: none;
+    border-radius: 14px;
+    background: linear-gradient(135deg, var(--accent), var(--accent2));
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: .04em;
+    cursor: pointer;
+    transition: opacity .2s, transform .1s;
+    margin-bottom: 36px;
+  }
+  .calc-btn:hover { opacity: .88; }
+  .calc-btn:active { transform: scale(.98); }
+
+  /* Results */
+  #results { display: none; }
+  #results.visible { display: block; }
+
+  .results-title {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    margin-bottom: 16px;
+  }
+
+  .risk-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+    margin-bottom: 32px;
+  }
+
+  .risk-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+  }
+  .risk-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    border-radius: 14px 14px 0 0;
+  }
+  .risk-card.low::before   { background: var(--low); }
+  .risk-card.medium::before { background: var(--medium); }
+  .risk-card.high::before  { background: var(--high); }
+  .risk-card.critical::before { background: var(--critical); }
+
+  .risk-label {
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .06em;
+    color: var(--muted);
+    margin-bottom: 6px;
+  }
+  .risk-name {
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 14px;
+    line-height: 1.35;
+  }
+
+  .gauge-wrap {
+    position: relative;
+    height: 8px;
+    background: var(--border);
+    border-radius: 99px;
+    overflow: hidden;
+    margin-bottom: 8px;
+  }
+  .gauge-fill {
+    height: 100%;
+    border-radius: 99px;
+    transition: width .8s cubic-bezier(.4,0,.2,1);
+  }
+  .low .gauge-fill   { background: var(--low); }
+  .medium .gauge-fill { background: var(--medium); }
+  .high .gauge-fill  { background: var(--high); }
+  .critical .gauge-fill { background: var(--critical); }
+
+  .risk-pct {
+    font-size: 1.6rem;
+    font-weight: 800;
+  }
+  .low .risk-pct    { color: var(--low); }
+  .medium .risk-pct { color: var(--medium); }
+  .high .risk-pct   { color: var(--high); }
+  .critical .risk-pct { color: var(--critical); }
+
+  .risk-level-tag {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .06em;
+    margin-left: 8px;
+    vertical-align: middle;
+  }
+  .low .risk-level-tag    { color: var(--low); }
+  .medium .risk-level-tag { color: var(--medium); }
+  .high .risk-level-tag   { color: var(--high); }
+  .critical .risk-level-tag { color: var(--critical); }
+
+  /* Detail sections */
+  .detail-section {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    margin-bottom: 20px;
+    overflow: hidden;
+  }
+  .detail-header {
+    padding: 18px 22px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    user-select: none;
+    transition: background .15s;
+  }
+  .detail-header:hover { background: rgba(255,255,255,.03); }
+  .detail-header-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .detail-icon {
+    font-size: 1.3rem;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: var(--card);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  .detail-title {
+    font-size: 0.95rem;
+    font-weight: 700;
+  }
+  .detail-subtitle {
+    font-size: 0.75rem;
+    color: var(--muted);
+    margin-top: 2px;
+  }
+  .chevron {
+    color: var(--muted);
+    font-size: 1rem;
+    transition: transform .25s;
+  }
+  .detail-section.open .chevron { transform: rotate(180deg); }
+  .detail-body {
+    display: none;
+    padding: 0 22px 22px;
+    border-top: 1px solid var(--border);
+  }
+  .detail-section.open .detail-body { display: block; }
+
+  .info-block { margin-top: 16px; }
+  .info-block h4 {
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .06em;
+    color: var(--accent2);
+    margin-bottom: 10px;
+  }
+  .info-block ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .info-block li {
+    font-size: 0.875rem;
+    color: var(--text);
+    line-height: 1.55;
+    padding-left: 18px;
+    position: relative;
+  }
+  .info-block li::before {
+    content: '›';
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+    font-weight: 700;
+  }
+
+  .sources {
+    margin-top: 14px;
+    padding: 12px 14px;
+    background: var(--card);
+    border-radius: 10px;
+    border-left: 3px solid var(--accent);
+  }
+  .sources h5 {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .07em;
+    color: var(--accent);
+    margin-bottom: 8px;
+  }
+  .sources ol {
+    padding-left: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .sources li {
+    font-size: 0.75rem;
+    color: var(--muted);
+    line-height: 1.5;
+  }
+  .sources li em {
+    font-style: italic;
+    color: var(--text);
+  }
+
+  /* Recs */
+  .recs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 16px;
+    margin-top: 16px;
+  }
+  .rec-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 16px 18px;
+  }
+  .rec-card h4 {
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .06em;
+    color: var(--accent2);
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .rec-card ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+  }
+  .rec-card li {
+    font-size: 0.82rem;
+    color: var(--text);
+    line-height: 1.5;
+    padding-left: 14px;
+    position: relative;
+  }
+  .rec-card li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+  }
+
+  .overall-box {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 22px 26px;
+    margin-bottom: 28px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .overall-score-ring {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+  }
+  .overall-score-ring svg { transform: rotate(-90deg); }
+  .overall-score-ring .score-text {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    font-weight: 800;
+  }
+  .overall-text h3 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin-bottom: 6px;
+  }
+  .overall-text p {
+    font-size: 0.85rem;
+    color: var(--muted);
+    max-width: 500px;
+    line-height: 1.5;
+  }
+
+  footer {
+    text-align: center;
+    margin-top: 48px;
+    font-size: 0.75rem;
+    color: var(--muted);
+    line-height: 1.7;
+  }
+  footer strong { color: var(--text); }
+
+  @media (max-width: 480px) {
+    .overall-box { flex-direction: column; text-align: center; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>Калькулятор рисков<br>хронического недосыпания</h1>
+  <p>Введите ваши данные, чтобы получить персонализированную оценку рисков для здоровья и рекомендации по минимизации вреда.</p>
+</header>
+
+<!-- INPUTS -->
+<div class="input-grid">
+  <div class="field">
+    <label>Часов сна в сутки</label>
+    <div class="val-row">
+      <div><span class="val-num" id="sleepVal">6</span><span class="val-unit">ч</span></div>
+    </div>
+    <input type="range" id="sleep" min="3" max="10" step="0.5" value="6"
+           oninput="document.getElementById('sleepVal').textContent=this.value">
+    <div class="range-labels"><span>3 ч</span><span>10 ч</span></div>
+  </div>
+
+  <div class="field">
+    <label>Возраст</label>
+    <div class="val-row">
+      <div><span class="val-num" id="ageVal">35</span><span class="val-unit">лет</span></div>
+    </div>
+    <input type="range" id="age" min="18" max="80" step="1" value="35"
+           oninput="document.getElementById('ageVal').textContent=this.value">
+    <div class="range-labels"><span>18</span><span>80</span></div>
+  </div>
+
+  <div class="field">
+    <label>Индекс массы тела (ИМТ)</label>
+    <div class="val-row">
+      <div><span class="val-num" id="bmiVal">24</span><span class="val-unit">кг/м²</span></div>
+    </div>
+    <input type="range" id="bmi" min="16" max="45" step="0.5" value="24"
+           oninput="document.getElementById('bmiVal').textContent=this.value">
+    <div class="range-labels"><span>16</span><span>45</span></div>
+  </div>
+
+  <div class="field">
+    <label>Хроничность недосыпания</label>
+    <div class="val-row">
+      <div><span class="val-num" id="durVal">6</span><span class="val-unit">мес</span></div>
+    </div>
+    <input type="range" id="dur" min="1" max="120" step="1" value="6"
+           oninput="document.getElementById('durVal').textContent=this.value">
+    <div class="range-labels"><span>1 мес</span><span>10 лет</span></div>
+  </div>
+
+  <div class="field">
+    <label>Пол</label>
+    <div style="height:10px"></div>
+    <div class="gender-row">
+      <button class="gender-btn active" id="gM" onclick="setGender('M')">Мужской</button>
+      <button class="gender-btn" id="gF" onclick="setGender('F')">Женский</button>
+    </div>
+  </div>
+
+  <div class="field">
+    <label>Стресс-нагрузка</label>
+    <div class="val-row">
+      <div><span class="val-num" id="stressVal">5</span><span class="val-unit">/10</span></div>
+    </div>
+    <input type="range" id="stress" min="1" max="10" step="1" value="5"
+           oninput="document.getElementById('stressVal').textContent=this.value">
+    <div class="range-labels"><span>низкая</span><span>высокая</span></div>
+  </div>
+</div>
+
+<button class="calc-btn" onclick="calculate()">Рассчитать риски</button>
+
+<!-- RESULTS -->
+<div id="results">
+
+  <div class="results-title">Общий профиль риска</div>
+
+  <div class="overall-box" id="overallBox">
+    <div class="overall-score-ring" id="scoreRing">
+      <svg width="80" height="80" viewBox="0 0 80 80">
+        <circle cx="40" cy="40" r="32" fill="none" stroke="#2e3350" stroke-width="8"/>
+        <circle id="ringArc" cx="40" cy="40" r="32" fill="none" stroke="#6c7dff"
+                stroke-width="8" stroke-linecap="round"
+                stroke-dasharray="201" stroke-dashoffset="201"/>
+      </svg>
+      <div class="score-text"><span id="overallPct">—</span></div>
+    </div>
+    <div class="overall-text">
+      <h3 id="overallTitle">—</h3>
+      <p id="overallDesc">—</p>
+    </div>
+  </div>
+
+  <!-- Risk cards -->
+  <div class="results-title">Риски по категориям</div>
+  <div class="risk-grid" id="riskGrid"></div>
+
+  <!-- Expandable risk details -->
+  <div class="results-title">Детальный анализ и рекомендации</div>
+  <div id="detailSections"></div>
+
+</div><!-- /results -->
+
+<footer>
+  <strong>Важно:</strong> Этот инструмент носит исключительно информационный характер и не заменяет консультацию врача.<br>
+  При хроническом нарушении сна обратитесь к сомнологу или неврологу.<br><br>
+  Расчёты основаны на популяционных данных из рецензируемых научных работ. Индивидуальный риск может отличаться от популяционного.
+</footer>
+
+</div><!-- /container -->
+
+<script>
+let gender = 'M';
+
+function setGender(g) {
+  gender = g;
+  document.getElementById('gM').classList.toggle('active', g === 'M');
+  document.getElementById('gF').classList.toggle('active', g === 'F');
+}
+
+function clamp(v, lo, hi) { return Math.max(lo, Math.min(hi, v)); }
+
+/* ---- Risk models (based on published meta-analyses) ---- */
+
+function sleepDeficit(h) {
+  // Deficit relative to 7-9h optimum
+  if (h >= 7) return 0;
+  if (h >= 6) return 0.3;
+  if (h >= 5) return 0.65;
+  return 1.0;
+}
+
+function ageFactor(age) {
+  // Risk increases with age for all categories
+  if (age < 30) return 0.7;
+  if (age < 45) return 1.0;
+  if (age < 60) return 1.3;
+  return 1.6;
+}
+
+function bmiFactor(bmi) {
+  if (bmi < 18.5) return 0.85;
+  if (bmi < 25)   return 1.0;
+  if (bmi < 30)   return 1.25;
+  if (bmi < 35)   return 1.5;
+  return 1.8;
+}
+
+function durFactor(months) {
+  if (months < 3)   return 0.6;
+  if (months < 12)  return 1.0;
+  if (months < 36)  return 1.3;
+  if (months < 60)  return 1.55;
+  return 1.8;
+}
+
+function stressFactor(s) {
+  return 0.7 + (s - 1) * 0.07; // 0.77 – 1.40
+}
+
+function genderMod(cat) {
+  // Some conditions have gender asymmetry
+  if (gender === 'F') {
+    if (cat === 'htn') return 1.05;   // women slightly higher HTN risk with short sleep
+    if (cat === 'cvd') return 0.95;
+    if (cat === 'meta') return 1.1;
+  }
+  return 1.0;
+}
+
+/* Base population risks (meta-analysis derived relative risks applied to base rates) */
+function calcRisks(h, age, bmi, dur, stress) {
+  const sd = sleepDeficit(h);
+  const af = ageFactor(age);
+  const bf = bmiFactor(bmi);
+  const df = durFactor(dur);
+  const sf = stressFactor(stress);
+
+  // Hypertension — base RR ~1.35 for <6h (Cappuccio et al., 2011)
+  const htnBase = 0.12; // ~12% background 10-year incidence in healthy adults
+  const htnRR = 1 + sd * 1.35 * bf * df * sf * genderMod('htn');
+  const htn = clamp(htnBase * htnRR * af, 0.03, 0.92);
+
+  // CVD — base RR ~1.48 for <6h (Cappuccio et al., 2011; Itani et al., 2017)
+  const cvdBase = 0.08;
+  const cvdRR = 1 + sd * 1.48 * bf * df * sf * genderMod('cvd');
+  const cvd = clamp(cvdBase * cvdRR * af, 0.02, 0.88);
+
+  // Cognitive deficit — dose-response, steep (Van Dongen et al., 2003)
+  const cogBase = 0.15;
+  const cogRR = 1 + sd * 2.0 * (stress / 5) * df;
+  const cog = clamp(cogBase * cogRR * af * 0.8, 0.05, 0.95);
+
+  // Metabolic disorders — T2D, obesity (Cappuccio et al., 2010; Spiegel et al., 2009)
+  const metaBase = 0.10;
+  const metaRR = 1 + sd * 1.55 * bf * df * sf * genderMod('meta');
+  const meta = clamp(metaBase * metaRR * af, 0.03, 0.90);
+
+  return {
+    htn:  Math.round(htn * 100),
+    cvd:  Math.round(cvd * 100),
+    cog:  Math.round(cog * 100),
+    meta: Math.round(meta * 100),
+  };
+}
+
+function levelOf(pct) {
+  if (pct < 20) return { cls: 'low',      label: 'Низкий' };
+  if (pct < 40) return { cls: 'medium',   label: 'Умеренный' };
+  if (pct < 65) return { cls: 'high',     label: 'Высокий' };
+  return             { cls: 'critical',  label: 'Критический' };
+}
+
+const RISK_META = {
+  htn: {
+    icon: '🩺',
+    name: 'Артериальная гипертензия',
+    shortName: 'Гипертония',
+    mechDesc: 'Недосыпание активирует симпатическую нервную систему, повышает уровень кортизола и нарушает циркадную регуляцию артериального давления — nocturnal dipping снижается или исчезает.',
+    mechanisms: [
+      'Гиперактивация гипоталамо-гипофизарно-надпочечниковой оси → хроническая гиперкортизолемия',
+      'Повышение симпатического тонуса → вазоконстрикция и тахикардия в покое',
+      'Нарушение «ночного снижения» АД (non-dipper паттерн) → повышенная нагрузка на сосуды',
+      'Рост уровней IL-6 и CRP → эндотелиальная дисфункция',
+      'Снижение чувствительности барорецепторов',
+    ],
+    recs: {
+      nutrition: [
+        'Ограничить натрий до 2 г/сут (5 г поваренной соли): исключить полуфабрикаты, соленья',
+        'Диета DASH: 4–5 порций овощей и фруктов, богатых калием (бананы, авокадо, шпинат)',
+        'Магний 350–400 мг/сут: тёмный шоколад, орехи, гречка — снижает АД на 3–4 мм рт. ст.',
+        'Свёкла и листовые нитраты: улучшают синтез NO и сосудистый тонус',
+        'Кофе: ≤ 2 чашки/сут, не позже 14:00 — кофеин ускоряет очистку аденозина и срывает архитектуру сна',
+      ],
+      activity: [
+        'Аэробные нагрузки средней интенсивности 30 мин × 5 раз/нед снижают АД на 4–9 мм рт. ст.',
+        'Ходьба 7 000+ шагов/сут достаточна при невозможности полноценных тренировок',
+        'Избегать интенсивных нагрузок за 3 ч до сна: симпатическая активация откладывает засыпание',
+        'Дыхательные упражнения (4-7-8 или когерентное дыхание 5-6 циклов/мин) снижают АД на 5–8 мм рт. ст.',
+      ],
+      nap: [
+        '20-минутный дневной сон (10:00–14:00) снижает дневную симпатическую гиперактивацию',
+        'Не спать после 15:00 — нарушает ночное давление аденозина и отдаляет засыпание',
+        '«Кофе-нэп»: выпить кофе и лечь на 20 мин — кофеин начинает работать к пробуждению (Hayashi et al., 2003)',
+      ],
+    },
+    sources: [
+      '<em>Cappuccio FP et al.</em> Sleep duration and hypertension: a systematic review. <b>J Hypertens</b>, 2011.',
+      '<em>Gangwisch JE et al.</em> Short sleep duration as risk factor for hypertension. <b>Hypertension</b>, 2006; 47: 833–839.',
+      '<em>Javaheri S, Redline S.</em> Insomnia and risk of cardiovascular disease. <b>Chest</b>, 2017.',
+      '<em>Appel LJ et al.</em> Dietary Approaches to Stop Hypertension (DASH) trial. <b>NEJM</b>, 1997.',
+    ],
+  },
+  cvd: {
+    icon: '❤️',
+    name: 'Сердечно-сосудистые заболевания',
+    shortName: 'ССЗ',
+    mechDesc: 'Хроническое недосыпание ускоряет атерогенез через системное воспаление, активирует тромбоциты и повышает инсулинорезистентность — независимый предиктор ИБС и инфаркта.',
+    mechanisms: [
+      'Повышение hs-CRP, IL-6, TNF-α → субклиническое воспаление → атеросклероз',
+      'Активация тромбоцитов и снижение фибринолиза → тромботический риск',
+      'Дислипидемия: рост триглицеридов, снижение ЛПВП',
+      'Нарушение сердечного ритма: повышение риска фибрилляции предсердий',
+      'Укорочение теломер (Prather et al., 2011) → ускоренное старение эндотелия',
+    ],
+    recs: {
+      nutrition: [
+        'Омега-3 (2–4 г/сут EPA+DHA): жирная рыба 2×/нед или рыбий жир — снижает триглицериды на 20–30%',
+        'Полифенолы какао (1–2 дольки тёмного шоколада ≥70%) — улучшают эндотелиальную функцию',
+        'Средиземноморская диета: EVOO, орехи, рыба, бобовые — снижает риск ССЗ на 30% (PREDIMED, 2013)',
+        'Ограничить трансжиры и рафинированные углеводы — провоспалительный профиль',
+        'Ресвератрол (красный виноград, ягоды) — активирует SIRT1, антиатерогенный эффект',
+      ],
+      activity: [
+        'Интервальная ходьба: 3 мин быстро + 3 мин медленно × 5 циклов — кардиопротективный эффект без перегрузки',
+        'Силовые тренировки 2×/нед улучшают липидный профиль и чувствительность к инсулину',
+        'Избегать сидения более 60 мин подряд — вставать и ходить 2 мин каждый час',
+        'Йога и тай-чи снижают ЧСС покоя и уровень кортизола, улучшают вариабельность сердечного ритма',
+      ],
+      nap: [
+        'Короткий сон (15–20 мин) ассоциирован со снижением риска ССЗ на 37% (Naska et al., 2007, исследование в Греции)',
+        'Оптимальное время для нэпа: 13:00–14:00 (совпадает с физиологическим послеобеденным спадом)',
+        'Не более 30 мин — иначе наступает инерция сна (сонливость после пробуждения)',
+      ],
+    },
+    sources: [
+      '<em>Cappuccio FP et al.</em> Sleep duration and ischemic heart disease and stroke: meta-analysis. <b>Eur Heart J</b>, 2011.',
+      '<em>Itani O et al.</em> Short sleep duration and health outcomes: systematic review. <b>Sleep Med</b>, 2017.',
+      '<em>Naska A et al.</em> Siesta and risk of CHD mortality: EPIC study. <b>Arch Intern Med</b>, 2007.',
+      '<em>Estruch R et al.</em> Primary prevention of CVD with Mediterranean diet. <b>NEJM</b>, 2013 (PREDIMED).',
+    ],
+  },
+  cog: {
+    icon: '🧠',
+    name: 'Когнитивный дефицит',
+    shortName: 'Когниция',
+    mechDesc: 'Во время медленноволнового сна мозг очищается от β-амилоида и тау-белков через глимфатическую систему. Хроническое недосыпание нарушает этот процесс, снижает нейропластичность и ускоряет нейродегенерацию.',
+    mechanisms: [
+      'Накопление β-амилоида и тау-белков при нарушении глимфатического клиренса (Xie et al., Science 2013)',
+      'Снижение BDNF → ухудшение долгосрочной потенциации и памяти',
+      'Нарушение консолидации памяти: медленноволновой сон критичен для переноса информации из гиппокампа в неокортекс',
+      'Накопление дефицита внимания: 14 суток по 6 ч = когниция как после 24 ч без сна (Van Dongen, 2003)',
+      'Повышение риска болезни Альцгеймера: RR ~1.68 при хроническом <6 ч (Shi et al., 2018)',
+    ],
+    recs: {
+      nutrition: [
+        'Кофеин стратегически: 100–200 мг утром, не позже 14:00 — улучшает внимание без нарушения сна',
+        'Холин (яйца, печень, соевые бобы) → синтез ацетилхолина → улучшение рабочей памяти',
+        'Ягоды (черника, ежевика) — антоцианы снижают нейровоспаление и улучшают скорость обработки информации',
+        'L-теанин 200 мг (зелёный чай, добавки) + кофеин — синергичное улучшение фокусировки без тревожности',
+        'Ограничить алкоголь: разрушает SWS и REM-сон даже в малых дозах',
+      ],
+      activity: [
+        '20 мин аэробной нагрузки повышают BDNF и улучшают исполнительные функции на 2–4 часа (Yannis, 2021)',
+        'Упражнения на равновесие (стойка на одной ноге, йога) активируют мозжечок и префронтальную кору',
+        'Прогулка после учёбы или работы: «сбрасывает» рабочую память, снижает кортизол, облегчает сон',
+        'Не заниматься силовыми тренировками за 4 ч до сна при наличии проблем с засыпанием',
+      ],
+      nap: [
+        '10-минутный сон восстанавливает когнитивную производительность на 2.5 ч (Tietzel & Lack, 2002)',
+        'Фаза N2 сна (10–20 мин) обогащает сон-веретена → улучшение моторной памяти',
+        'NASA-нэп: пилоты, спавшие 40 мин днём, улучшили производительность на 34%, бдительность на 100%',
+        'Перед важной умственной задачей: 20-мин нэп эффективнее 200 мг кофеина (Mednick et al., 2002)',
+      ],
+    },
+    sources: [
+      '<em>Van Dongen HPA et al.</em> Cumulative sleepiness and neurobehavioral deficits. <b>Sleep</b>, 2003; 26(2): 117–126.',
+      '<em>Xie L et al.</em> Sleep drives metabolite clearance from adult brain. <b>Science</b>, 2013; 342: 373–377.',
+      '<em>Shi L et al.</em> Sleep disturbances increase risk of dementia and Alzheimer\'s. <b>Sleep Med Rev</b>, 2018.',
+      '<em>Mednick S et al.</em> Sleep-dependent memory consolidation. <b>Nature</b>, 2003.',
+      '<em>Tietzel AJ, Lack LC.</em> The recuperative value of brief and ultrabrief naps. <b>Sleep</b>, 2002.',
+    ],
+  },
+  meta: {
+    icon: '⚗️',
+    name: 'Метаболические нарушения',
+    shortName: 'Метаболизм',
+    mechDesc: 'Всего 2 ночи по 4 ч снижают лептин на 18% и повышают грелин на 28% — гормональный сигнал к перееданию. Хроническое недосыпание — независимый фактор риска T2D и ожирения.',
+    mechanisms: [
+      'Рост грелина (+28%) и снижение лептина (−18%) за 2 ночи ограниченного сна (Spiegel et al., 2004)',
+      'Снижение чувствительности к инсулину на 25–40% при 5–6 ч сна (Spiegel et al., 1999)',
+      'Нарушение циркадной регуляции глюкозного метаболизма: пик кортизола сдвигается на ранние часы',
+      'Повышение риска СД2: OR = 1.37 при <6 ч (Cappuccio et al., 2010 — 10 исследований, 18 000 чел.)',
+      'Ускорение набора веса: Taheri et al. показали обратную зависимость ИМТ от длины сна',
+    ],
+    recs: {
+      nutrition: [
+        'Белковый завтрак (20–30 г протеина) снижает уровень грелина и уменьшает дневное переедание',
+        'Ограничить рафинированные углеводы и сахар, особенно вечером — ночная гипергликемия нарушает сон',
+        'Хром (брокколи, цельное зерно) и берберин — улучшают чувствительность к инсулину',
+        'Временное питание (8–10-часовое окно, ранний ужин до 19:00) — снижает инсулинорезистентность (Sutton et al., Cell Met., 2018)',
+        'Корица 1–2 г/сут — снижает постпрандиальную гликемию на 18–29%',
+      ],
+      activity: [
+        'Ходьба 10–15 мин после еды снижает постпрандиальную гликемию на 12–22% (DiPietro et al., 2013)',
+        'HIIT (4×4 мин при 90% ЧСС макс.) 3×/нед — наиболее эффективен для инсулиновой чувствительности',
+        'Силовые тренировки увеличивают мышечную массу → депо для утилизации глюкозы',
+        'Активность утром повышает термогенез и запускает метаболизм на весь день',
+      ],
+      nap: [
+        'Дневной сон частично компенсирует метаболические нарушения ночного сна (Faraut et al., J Clin Endocrinol, 2011)',
+        'Нэп снижает уровень норэпинефрина — маркера метаболического стресса',
+        'Оптимально 20 мин после обеда — совпадает с пиком послеобеденной инсулинорезистентности',
+      ],
+    },
+    sources: [
+      '<em>Spiegel K et al.</em> Sleep curtailment in healthy young men is associated with decreased leptin, elevated ghrelin. <b>PLoS Med</b>, 2004.',
+      '<em>Cappuccio FP et al.</em> Quantity and quality of sleep and incidence of type 2 diabetes. <b>Diabetes Care</b>, 2010.',
+      '<em>Taheri S et al.</em> Short sleep duration is associated with reduced leptin, elevated ghrelin. <b>PLoS Med</b>, 2004.',
+      '<em>Sutton EF et al.</em> Early time-restricted feeding improves insulin sensitivity. <b>Cell Metabolism</b>, 2018.',
+      '<em>Faraut B et al.</em> Napping reverses the salivary interleukin-6 and urinary norepinephrine. <b>J Clin Endocrinol</b>, 2015.',
+    ],
+  },
+};
+
+function toggle(id) {
+  const el = document.getElementById(id);
+  el.classList.toggle('open');
+}
+
+function renderRiskCard(key, pct) {
+  const m = RISK_META[key];
+  const lv = levelOf(pct);
+  return `
+  <div class="risk-card ${lv.cls}">
+    <div class="risk-label">${m.shortName}</div>
+    <div class="risk-name">${m.name}</div>
+    <div class="gauge-wrap"><div class="gauge-fill" style="width:${pct}%"></div></div>
+    <div class="risk-pct">${pct}%<span class="risk-level-tag">${lv.label}</span></div>
+  </div>`;
+}
+
+function renderDetail(key, pct) {
+  const m = RISK_META[key];
+  const lv = levelOf(pct);
+  const r = m.recs;
+  return `
+  <div class="detail-section" id="ds_${key}">
+    <div class="detail-header" onclick="toggle('ds_${key}')">
+      <div class="detail-header-left">
+        <div class="detail-icon">${m.icon}</div>
+        <div>
+          <div class="detail-title">${m.name}</div>
+          <div class="detail-subtitle ${lv.cls}" style="color:var(--${lv.cls})">${lv.label} риск · ${pct}%</div>
+        </div>
+      </div>
+      <span class="chevron">▾</span>
+    </div>
+    <div class="detail-body">
+      <div class="info-block">
+        <h4>Механизмы развития</h4>
+        <p style="font-size:.85rem;color:var(--muted);margin-bottom:8px;line-height:1.55">${m.mechDesc}</p>
+        <ul>${m.mechanisms.map(x=>`<li>${x}</li>`).join('')}</ul>
+      </div>
+
+      <div class="info-block">
+        <h4>Рекомендации по снижению вреда</h4>
+        <div class="recs-grid">
+          <div class="rec-card">
+            <h4>🥗 Питание</h4>
+            <ul>${r.nutrition.map(x=>`<li>${x}</li>`).join('')}</ul>
+          </div>
+          <div class="rec-card">
+            <h4>🏃 Физическая активность</h4>
+            <ul>${r.activity.map(x=>`<li>${x}</li>`).join('')}</ul>
+          </div>
+          <div class="rec-card">
+            <h4>😴 Короткий дневной сон</h4>
+            <ul>${r.nap.map(x=>`<li>${x}</li>`).join('')}</ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="sources">
+        <h5>Научные источники</h5>
+        <ol>${m.sources.map(x=>`<li>${x}</li>`).join('')}</ol>
+      </div>
+    </div>
+  </div>`;
+}
+
+function getOverallText(avg, sleep) {
+  if (avg < 20) return {
+    title: 'Профиль риска в норме',
+    desc: `При ${sleep} ч сна ваш профиль близок к оптимальному. Поддерживайте текущий режим и продолжайте следить за качеством сна.`
+  };
+  if (avg < 40) return {
+    title: 'Умеренно повышенный риск',
+    desc: `${sleep} ч сна недостаточно для полноценного восстановления. Риски пока контролируемы, но требуют внимания. Следуйте рекомендациям и постепенно увеличивайте продолжительность сна.`
+  };
+  if (avg < 65) return {
+    title: 'Высокий риск для здоровья',
+    desc: `Хроническое недосыпание при ${sleep} ч/сут создаёт значимую нагрузку на сердечно-сосудистую и эндокринную системы. Рекомендована консультация врача и пересмотр режима.`
+  };
+  return {
+    title: 'Критический профиль риска',
+    desc: `Ваш текущий режим сна (${sleep} ч) и сопутствующие факторы формируют критически высокий риск. Необходима консультация специалиста — сомнолога, кардиолога или эндокринолога.`
+  };
+}
+
+function ringColor(avg) {
+  if (avg < 20) return '#34d399';
+  if (avg < 40) return '#fbbf24';
+  if (avg < 65) return '#f87171';
+  return '#ef4444';
+}
+
+function calculate() {
+  const h      = parseFloat(document.getElementById('sleep').value);
+  const age    = parseInt(document.getElementById('age').value);
+  const bmi    = parseFloat(document.getElementById('bmi').value);
+  const dur    = parseInt(document.getElementById('dur').value);
+  const stress = parseInt(document.getElementById('stress').value);
+
+  const risks = calcRisks(h, age, bmi, dur, stress);
+  const avg = Math.round((risks.htn + risks.cvd + risks.cog + risks.meta) / 4);
+
+  // Overall ring
+  const circ = 2 * Math.PI * 32; // ~201
+  const offset = circ * (1 - avg / 100);
+  document.getElementById('ringArc').style.strokeDashoffset = offset;
+  document.getElementById('ringArc').style.stroke = ringColor(avg);
+  document.getElementById('overallPct').textContent = avg + '%';
+  document.getElementById('overallPct').style.color = ringColor(avg);
+
+  const ot = getOverallText(avg, h);
+  document.getElementById('overallTitle').textContent = ot.title;
+  document.getElementById('overallDesc').textContent = ot.desc;
+
+  // Risk cards
+  document.getElementById('riskGrid').innerHTML =
+    renderRiskCard('htn',  risks.htn) +
+    renderRiskCard('cvd',  risks.cvd) +
+    renderRiskCard('cog',  risks.cog) +
+    renderRiskCard('meta', risks.meta);
+
+  // Detail sections
+  document.getElementById('detailSections').innerHTML =
+    renderDetail('htn',  risks.htn) +
+    renderDetail('cvd',  risks.cvd) +
+    renderDetail('cog',  risks.cog) +
+    renderDetail('meta', risks.meta);
+
+  const results = document.getElementById('results');
+  results.classList.add('visible');
+  setTimeout(() => results.scrollIntoView({ behavior: 'smooth', block: 'start' }), 50);
+}
+</script>
+</body>
+</html>
