@@ -5,6 +5,7 @@ Study Tracker — ежедневный трекер учёбы для подго
 Хранит данные в study_tracker.json, использует только встроенные библиотеки.
 """
 
+import csv
 import json
 import os
 import sys
@@ -16,7 +17,7 @@ DATA_FILE = "study_tracker.json"
 
 HSK_EXAM_DATE  = date(2026, 7, 28)
 DET_EXAM_DATE  = date(2026, 9, 8)
-HSK_TOTAL_WORDS = 600           # целевое количество слов HSK 4
+HSK_TOTAL_WORDS = 1150          # целевое количество слов HSK 4
 MIN_HABITS      = 5             # минимум привычек для засчёта серии
 
 HABITS = [
@@ -509,6 +510,98 @@ def daily_checkin(data: dict) -> None:
 
 # ─── Команда words ────────────────────────────────────────────────────────────
 
+def export_csv(data: dict) -> None:
+    """Экспортировать все данные в два CSV-файла: дни и история тестов."""
+    today_str = date.today().isoformat()
+
+    # ── Файл 1: ежедневный лог ───────────────────────────────────────────────
+    days_file = f"study_export_days_{today_str}.csv"
+    habit_keys = [k for k, _ in HABITS]
+    habit_labels = [label for _, label in HABITS]
+
+    with open(days_file, "w", newline="", encoding="utf-8-sig") as f:
+        # utf-8-sig добавляет BOM — Excel открывает кириллицу без настроек
+        writer = csv.writer(f)
+
+        # Заголовок
+        writer.writerow([
+            "Дата", "День недели",
+            *habit_labels,
+            "Язык фильма",
+            "Выполнено привычек",
+            "Серия зачтена (≥5)",
+            "Режим дня",
+            "Новых слов HSK",
+            "Итого слов HSK (накопительно)",
+            "Заметка",
+        ])
+
+        # Строим накопительный счётчик слов в хронологическом порядке
+        sorted_days = sorted(data["days"].items())
+        cumulative_words = 0
+
+        for day_str, day_data in sorted_days:
+            d = date.fromisoformat(day_str)
+            weekday_ru = ["Пн", "Вт", "Ср", "Чт", "Пт", "Сб", "Вс"][d.weekday()]
+            habits = day_data.get("habits", {})
+
+            habit_values = ["Да" if habits.get(k, False) else "Нет" for k in habit_keys]
+            movie_lang_map = {"english": "Английский", "chinese": "Китайский", None: ""}
+            movie_lang = movie_lang_map.get(habits.get("movie_lang"), "")
+
+            done_count = count_done_habits(habits)
+            streak_ok  = "Да" if done_count >= MIN_HABITS else "Нет"
+            mode_map   = {"full": "Полная", "minimal": "Минимальная", "": ""}
+            mode       = mode_map.get(day_data.get("mode", ""), "")
+
+            words_today   = day_data.get("hsk_words", 0)
+            cumulative_words += words_today
+
+            writer.writerow([
+                day_str,
+                weekday_ru,
+                *habit_values,
+                movie_lang,
+                done_count,
+                streak_ok,
+                mode,
+                words_today,
+                cumulative_words,
+                day_data.get("note", ""),
+            ])
+
+    # ── Файл 2: история тестов ───────────────────────────────────────────────
+    tests_file = f"study_export_tests_{today_str}.csv"
+    history = data.get("test_history", [])
+
+    with open(tests_file, "w", newline="", encoding="utf-8-sig") as f:
+        writer = csv.writer(f)
+        writer.writerow([
+            "Дата",
+            "HSK mock-тест (%)",
+            "HSK баллы (≈/300)",   # пересчёт: % × 3
+            "DET пробник (баллы)",
+            "DET цель достигнута (≥110)",
+        ])
+        for entry in history:
+            hsk_pct   = entry.get("hsk_pct")
+            det_score = entry.get("det_score")
+            hsk_pts   = round(hsk_pct * 3, 1) if hsk_pct is not None else ""
+            hsk_str   = f"{hsk_pct:.1f}" if hsk_pct is not None else ""
+            det_str   = f"{det_score:.0f}" if det_score is not None else ""
+            det_ok    = ("Да" if det_score >= 110 else "Нет") if det_score is not None else ""
+            writer.writerow([entry["date"], hsk_str, hsk_pts, det_str, det_ok])
+
+    # ── Итог ─────────────────────────────────────────────────────────────────
+    days_count  = len(data["days"])
+    tests_count = len(history)
+    print(f"\n  ✅  Экспорт завершён:")
+    print(f"  📄  {days_file}  ({days_count} дней)")
+    print(f"  📄  {tests_file}  ({tests_count} тестов)")
+    print(f"\n  Совет: откройте в Excel → Данные → Из текста/CSV,")
+    print(f"  либо просто перетащите файл в Google Таблицы.\n")
+
+
 def add_words_manually(data: dict, n: int) -> None:
     """Добавить N слов HSK вручную (без полного чекина)."""
     data["total_hsk_words"] = data.get("total_hsk_words", 0) + n
@@ -531,6 +624,9 @@ def main() -> None:
     elif args[0] == "week":
         show_week_summary(data)
 
+    elif args[0] == "export":
+        export_csv(data)
+
     elif args[0] == "words" and len(args) == 2:
         try:
             n = int(args[1])
@@ -545,7 +641,8 @@ def main() -> None:
         print("  python study_tracker.py          — ежедневный чекин")
         print("  python study_tracker.py stats    — полная статистика")
         print("  python study_tracker.py week     — итоги недели")
-        print("  python study_tracker.py words N  — добавить N слов HSK\n")
+        print("  python study_tracker.py words N  — добавить N слов HSK")
+        print("  python study_tracker.py export   — экспорт в CSV (Excel / Google Таблицы)\n")
 
 
 if __name__ == "__main__":
