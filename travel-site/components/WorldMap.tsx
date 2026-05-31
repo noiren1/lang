@@ -8,10 +8,29 @@ import { useRouter } from 'next/navigation'
 const GEO_URL = 'https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json'
 
 const ISO_NUMERIC_TO_ALPHA2: Record<string, string> = {
+  // Original 20
   '392': 'JP', '764': 'TH', '380': 'IT', '724': 'ES', '250': 'FR',
   '276': 'DE', '840': 'US', '826': 'GB', '792': 'TR', '300': 'GR',
   '360': 'ID', '620': 'PT', '784': 'AE', '036': 'AU', '356': 'IN',
   '704': 'VN', '484': 'MX', '504': 'MA', '170': 'CO', '604': 'PE',
+  // Europe
+  '528': 'NL', '056': 'BE', '040': 'AT', '756': 'CH', '203': 'CZ',
+  '348': 'HU', '616': 'PL', '191': 'HR', '578': 'NO', '752': 'SE',
+  '208': 'DK', '246': 'FI', '642': 'RO', '688': 'RS', '705': 'SI',
+  '352': 'IS', '372': 'IE', '470': 'MT',
+  // Asia
+  '410': 'KR', '156': 'CN', '702': 'SG', '458': 'MY', '116': 'KH',
+  '524': 'NP', '144': 'LK', '104': 'MM', '158': 'TW', '608': 'PH',
+  '418': 'LA',
+  // Americas
+  '076': 'BR', '032': 'AR', '152': 'CL', '192': 'CU', '188': 'CR',
+  '591': 'PA',
+  // Middle East
+  '400': 'JO', '376': 'IL', '512': 'OM', '634': 'QA',
+  // Africa
+  '818': 'EG', '404': 'KE', '834': 'TZ', '710': 'ZA', '231': 'ET',
+  // Oceania
+  '554': 'NZ',
 }
 
 export default function WorldMap() {
