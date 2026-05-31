@@ -1,0 +1,1171 @@
+{
+  "universalTips": [
+    {
+      "category": "Health & Safety",
+      "tip": "Drink electrolytes before and during flights",
+      "description": "Airplane cabin humidity is under 20% — far drier than the Sahara. Dissolve an electrolyte packet (LMNT, Liquid IV, or Nuun tabs) in your water before boarding and once mid-flight. This prevents the headache, fatigue, and brain fog most people wrongly blame on jet lag.",
+      "emoji": "💧"
+    },
+    {
+      "category": "Health & Safety",
+      "tip": "Use melatonin strategically, not habitually",
+      "description": "Take 0.5–1mg (low dose) melatonin at the local bedtime of your destination, starting the night before you fly. Higher doses (5–10mg) cause grogginess the next day. The goal is signaling, not sedating.",
+      "emoji": "😴"
+    },
+    {
+      "category": "Health & Safety",
+      "tip": "Get altitude sickness medication before high-altitude trips",
+      "description": "Ask your doctor for acetazolamide (Diamox) before visiting cities above 8,000 ft (Cusco, La Paz, Lhasa). Start 1–2 days before ascent. This is far more effective than coca tea alone and can prevent a ruined trip.",
+      "emoji": "⛰️"
+    },
+    {
+      "category": "Health & Safety",
+      "tip": "Use GeoSure app for neighborhood-level safety scores",
+      "description": "GeoSure gives real-time safety ratings by neighborhood — not just city-wide — covering crime, health risk, women's safety, and political stability. Far more granular than government advisories.",
+      "emoji": "🛡️"
+    },
+    {
+      "category": "Health & Safety",
+      "tip": "Pack a basic medical kit with probiotics and Imodium",
+      "description": "Traveler's diarrhea hits 30–70% of visitors to developing countries. Pack Imodium (loperamide), oral rehydration salts, and a 10-day course of probiotics (Saccharomyces boulardii is the best-studied travel strain). Start probiotics 5 days before departure.",
+      "emoji": "💊"
+    },
+    {
+      "category": "Health & Safety",
+      "tip": "Download the Sitata app for real-time health and disruption alerts",
+      "description": "Sitata monitors disease outbreaks, political unrest, natural disasters, and flight disruptions globally and sends push alerts relevant to your itinerary. Think of it as a real-time travel safety intelligence feed.",
+      "emoji": "🚨"
+    },
+    {
+      "category": "Health & Safety",
+      "tip": "Get travel insurance that covers emergency evacuation",
+      "description": "Basic travel insurance often excludes medical evacuation, which can cost $50,000–$200,000. Look for policies that include it explicitly (World Nomads, SafetyWing, or Allianz). Verify the coverage ceiling and whether it covers adventure sports if relevant.",
+      "emoji": "🏥"
+    },
+    {
+      "category": "Money & Budget",
+      "tip": "Use a Wise or Revolut card — never exchange cash at airports",
+      "description": "Airport currency exchange desks charge 8–15% margins. Wise (formerly TransferWise) uses the real mid-market rate with a small transparent fee. Revolut offers fee-free exchange up to a monthly limit. Both issue physical and virtual debit cards. Set up before you travel.",
+      "emoji": "💳"
+    },
+    {
+      "category": "Money & Budget",
+      "tip": "Always pay in local currency, never in your home currency",
+      "description": "When a card terminal asks if you want to pay in USD (or your home currency) abroad, always decline and choose local currency. The merchant's 'Dynamic Currency Conversion' rate is always worse — often by 3–8%.",
+      "emoji": "💱"
+    },
+    {
+      "category": "Money & Budget",
+      "tip": "Use Charles Schwab checking account for ATM fee reimbursement",
+      "description": "The Charles Schwab Investor Checking account reimburses all ATM fees worldwide, with no foreign transaction fees. For US travelers, this is the best debit card for international cash withdrawals. No minimum balance required.",
+      "emoji": "🏦"
+    },
+    {
+      "category": "Money & Budget",
+      "tip": "Set Google Flights price alerts at least 6 weeks out",
+      "description": "Use Google Flights 'Track prices' feature when you know your destination but not your exact dates. For most international routes, the sweet spot for booking is 4–8 weeks out. Enable alerts and you'll get email notifications when prices drop.",
+      "emoji": "✈️"
+    },
+    {
+      "category": "Money & Budget",
+      "tip": "Eat the lunch menu (midi) instead of dinner at restaurants",
+      "description": "In France, Italy, Spain, Portugal, and most of Europe, the same restaurant serves the same food at lunch for 30–50% less. A €35 dinner becomes a €15 lunch formule or menu del día. Flip your meal schedule: big lunch, light dinner.",
+      "emoji": "🍽️"
+    },
+    {
+      "category": "Money & Budget",
+      "tip": "Use Hopper to predict the best time to book flights",
+      "description": "Hopper's AI analyzes billions of flight prices to predict whether to buy now or wait. It shows a 'price freeze' feature that lets you lock in a fare for 24–72 hours while you decide. Most accurate for North American routes.",
+      "emoji": "📉"
+    },
+    {
+      "category": "Transport",
+      "tip": "Go left at airport security — right-handed bias means shorter lines",
+      "description": "Research confirms that 90% of people are right-handed and instinctively veer right. The left-side security lane at most airports is consistently shorter. If there are multiple lanes, also look for lanes occupied by business travelers in suits — they move faster and pack smarter.",
+      "emoji": "🔀"
+    },
+    {
+      "category": "Transport",
+      "tip": "Book seat 1A or bulkhead for overnight flights",
+      "description": "For long-haul economy, bulkhead row seats (row 1 or emergency exit rows) give you 6–12 extra inches of legroom. Book immediately when a seat opens — typically 24 hours before departure when airlines release reserved seats to all passengers.",
+      "emoji": "💺"
+    },
+    {
+      "category": "Transport",
+      "tip": "Use Rome2rio to plan multi-modal transport",
+      "description": "Rome2rio compares every transport option between two points — train, bus, ferry, plane, drive — with cost, duration, and booking links. Essential for planning routes in countries with complex transport networks like India, Vietnam, or the Balkans.",
+      "emoji": "🗺️"
+    },
+    {
+      "category": "Transport",
+      "tip": "Download offline maps before you land",
+      "description": "Download Google Maps offline for your destination while on Wi-Fi. For hiking and off-grid areas, download Maps.me or Organic Maps — these include trails, small guesthouses, and local POIs that Google Maps misses. Test in airplane mode before you land.",
+      "emoji": "📍"
+    },
+    {
+      "category": "Transport",
+      "tip": "Pre-book airport transfers for arrival in unfamiliar cities",
+      "description": "The most vulnerable moment of any trip is arriving in an unfamiliar airport after a long flight. Pre-book a transfer via the official airport taxi service or apps like KiwiTaxi, Welcome Pickups, or GetTransfer. You'll pay a small premium but avoid scam taxis.",
+      "emoji": "🚖"
+    },
+    {
+      "category": "Transport",
+      "tip": "Take overnight trains or buses to save on accommodation",
+      "description": "Overnight trains between major cities (Bangkok–Chiang Mai, Lisbon–Madrid, Hanoi–Ho Chi Minh City, Munich–Rome) cover the distance while you sleep, saving one hotel night. Book a couchette or sleeper car — the marginal cost is worth it for comfort.",
+      "emoji": "🚆"
+    },
+    {
+      "category": "Accommodation",
+      "tip": "Email the hotel directly to ask for an upgrade",
+      "description": "After booking, send a brief email to the hotel's reservations email (not the booking platform) with your dates and a polite note about a special occasion or a simple room preference request. Front desks have discretion to upgrade, and a direct ask works more often than you'd expect.",
+      "emoji": "⬆️"
+    },
+    {
+      "category": "Accommodation",
+      "tip": "Check in around 4 PM for the best upgrade chances",
+      "description": "Hotels assign room upgrades based on what's been cleaned and what's unoccupied. By 4 PM, the housekeeping sweep is complete, and the front desk has a clear picture of availability. Arriving at 2 PM when housekeeping is still working limits their options.",
+      "emoji": "🕓"
+    },
+    {
+      "category": "Accommodation",
+      "tip": "Book directly with hotels to unlock perks unavailable on OTAs",
+      "description": "Hotels are contractually obligated to honor Booking.com/Expedia prices, but they can offer extras only to direct bookers: free breakfast, late checkout, room credits, or bottle of wine. Call or email directly after comparing prices on OTAs.",
+      "emoji": "📞"
+    },
+    {
+      "category": "Accommodation",
+      "tip": "Use the USB port on the hotel TV if you forgot a charger",
+      "description": "Almost every hotel TV made since 2015 has a USB-A port on the side or back. It charges slowly but reliably — enough to top up your phone overnight if you've lost or forgotten your charger. Works for most Android phones and older iPhones.",
+      "emoji": "🔌"
+    },
+    {
+      "category": "Accommodation",
+      "tip": "Put any card in the room key slot to keep power on",
+      "description": "Most hotel room key-activated power switches work with any card the same thickness as a key card — a loyalty card, expired credit card, or business card. This means you can keep your devices charging when you leave the room.",
+      "emoji": "🃏"
+    },
+    {
+      "category": "Accommodation",
+      "tip": "Sign up for hotel loyalty programs on the first stay",
+      "description": "Even if you never return, hotel loyalty programs (Marriott Bonvoy, Hilton Honors, IHG One Rewards) offer member-only rates and free Wi-Fi just for being a member. Sign up before or at check-in — it's free and gives instant benefits.",
+      "emoji": "⭐"
+    },
+    {
+      "category": "Food",
+      "tip": "Follow the crowd to find safe, good street food",
+      "description": "The single best indicator of safe, delicious street food is queue length of locals, not tourists. High turnover means fresh ingredients, hot food, and a cook who isn't cutting corners. A long line of office workers at noon is a Michelin star signal.",
+      "emoji": "🍜"
+    },
+    {
+      "category": "Food",
+      "tip": "In Thailand, tubular ice (with a hole) is factory-made and safe",
+      "description": "Thailand's tubular ice (cylindrical with a center hole) is commercially manufactured from filtered water and delivered in sealed bags. The solid crushed ice at cheap street stalls may be from tap water. This distinction could save your stomach.",
+      "emoji": "🧊"
+    },
+    {
+      "category": "Food",
+      "tip": "Use Google Lens to translate menus in real time",
+      "description": "Open Google Translate, tap the camera icon, and point at any menu or sign. It overlays the translation on your screen in real time, even offline if you've pre-downloaded the language pack. Works for Japanese, Chinese, Arabic, Thai, and 100+ languages.",
+      "emoji": "📸"
+    },
+    {
+      "category": "Food",
+      "tip": "Ask hotel staff for their personal neighborhood recommendations",
+      "description": "Hotel concierges recommend tourist-facing restaurants. Ask instead: 'Where do you go for lunch on your day off?' or 'Where does the chef here like to eat?' — you'll get real neighborhood gems, not commissions.",
+      "emoji": "💬"
+    },
+    {
+      "category": "Food",
+      "tip": "Download the HappyCow app for vegetarian and vegan options globally",
+      "description": "HappyCow has a database of 200,000+ vegetarian and vegan restaurants in 180 countries with user reviews. Essential for plant-based travelers in countries where communicating dietary needs is difficult.",
+      "emoji": "🥗"
+    },
+    {
+      "category": "Food",
+      "tip": "Order what the table next to you is having",
+      "description": "In countries where you don't speak the language, a simple point at the best-looking plate on a nearby table communicates clearly and gets you the local specialty. The cook will usually nod and confirm.",
+      "emoji": "👀"
+    },
+    {
+      "category": "Culture & Etiquette",
+      "tip": "Learn 10 words in the local language — it changes everything",
+      "description": "Hello, thank you, please, excuse me, how much, delicious, yes, no, good, and sorry. In Japan, Vietnam, Morocco, and Turkey, making any effort in the local language unlocks warmth, better service, and authentic interactions that most tourists never experience.",
+      "emoji": "🗣️"
+    },
+    {
+      "category": "Culture & Etiquette",
+      "tip": "Never tip in Japan — it's considered rude",
+      "description": "In Japan, tipping implies the server didn't get a fair wage, which can cause embarrassment or offense. The price on the menu is the price. This also applies to taxis, hotels, and tour guides. Save the change.",
+      "emoji": "🇯🇵"
+    },
+    {
+      "category": "Culture & Etiquette",
+      "tip": "Always carry a scarf or sarong for temple visits",
+      "description": "A lightweight pashmina or cotton sarong weighs nothing and covers you for temple entry in Thailand, Bali, Cambodia, Morocco, and India. Many sites turn away underdressed visitors. A €5 sarong prevents a €0 entry.",
+      "emoji": "🧣"
+    },
+    {
+      "category": "Culture & Etiquette",
+      "tip": "Remove shoes before entering homes and temples in Asia",
+      "description": "In Japan, Thailand, India, Indonesia, and most of Southeast Asia, removing shoes before entering homes, temples, and many traditional restaurants is expected and essential for respect. When in doubt, look at the entrance — if shoes are piled outside, yours should be too.",
+      "emoji": "👟"
+    },
+    {
+      "category": "Culture & Etiquette",
+      "tip": "Avoid showing the soles of your feet in Arab and Thai cultures",
+      "description": "In Arab countries and Thailand, pointing your feet at a person or showing your soles (especially toward a religious image or altar) is deeply disrespectful. Sit cross-legged or with feet tucked away in temples and traditional homes.",
+      "emoji": "🦶"
+    },
+    {
+      "category": "Culture & Etiquette",
+      "tip": "Ask permission before photographing people",
+      "description": "In Morocco, India, Peru, and most of Sub-Saharan Africa, photographing people — especially in markets, at religious sites, or in traditional dress — without asking is invasive and can cause conflict. A smile and a gesture toward your camera usually gets a nod or a natural portrait.",
+      "emoji": "📷"
+    },
+    {
+      "category": "Packing",
+      "tip": "Travel carry-on only: use the bundle packing method",
+      "description": "Bundle packing (wrapping clothes around a core object) resists wrinkles better than rolling or flat folding. Put the stiffest items (trousers, dresses) first, then softer layers (shirts, sweaters), then the core (packing cube or toiletry bag). Fewer wrinkles = no iron needed.",
+      "emoji": "🎒"
+    },
+    {
+      "category": "Packing",
+      "tip": "Use compression packing cubes — they save 30% of bag space",
+      "description": "Compression packing cubes (Osprey, Eagle Creek, or Peak Design versions) compress clothes by up to 30% compared to standard folding. Color-code by type: one for tops, one for bottoms, one for dirties. Makes airport security and room unpacking fast.",
+      "emoji": "📦"
+    },
+    {
+      "category": "Packing",
+      "tip": "Pack shoes at the bottom of your bag, in shower caps",
+      "description": "Place shoes in individual shower caps (most hotels provide them, or pack two from Amazon) before putting them in your bag. Keeps shoe soles from touching clothes. Position at the bottom/back of your bag near the wheels, where weight sits best.",
+      "emoji": "👞"
+    },
+    {
+      "category": "Packing",
+      "tip": "Switch to solid toiletries to skip the 100ml liquids rule",
+      "description": "Solid shampoo bars (Lush, HiBar), conditioner bars, solid sunscreen, and toothpaste tablets completely bypass the TSA 3-1-1 liquids rule and last as long as their liquid equivalents. They're also lighter and won't explode in your bag.",
+      "emoji": "🧴"
+    },
+    {
+      "category": "Packing",
+      "tip": "Bring a portable luggage scale — overweight bags cost $50–$200",
+      "description": "A handheld luggage scale (Amazon: $10–15) prevents the worst-case airport scenario: repacking at the check-in counter or paying a $100+ overweight fee. Weigh your bag at home. Most budget airlines have strict 7–10kg carry-on limits.",
+      "emoji": "⚖️"
+    },
+    {
+      "category": "Packing",
+      "tip": "Wear your heaviest items on the plane",
+      "description": "Your jacket, heaviest shoes, and bulkiest sweater go on your body for the flight, not in your bag. Airlines weigh bags, not people. This simple hack saves 2–5kg of bag weight with zero cost.",
+      "emoji": "🧥"
+    },
+    {
+      "category": "Packing",
+      "tip": "Pack a universal power adapter with USB ports",
+      "description": "A single universal adapter with 2–3 USB-A and 1 USB-C port means you carry one device for 150+ countries instead of country-specific adapters. The Epicka Universal Travel Adapter is the most recommended. Check that your devices are dual-voltage (100–240V) before relying on it.",
+      "emoji": "🔌"
+    },
+    {
+      "category": "Visas & Documents",
+      "tip": "Store photos of all your documents in a secure cloud folder",
+      "description": "Photograph your passport, visa, travel insurance policy, hotel confirmations, and credit cards (front only). Store in Google Drive or Dropbox in a folder shared with someone at home. If your bag is stolen, you can walk into an embassy with your document numbers.",
+      "emoji": "📄"
+    },
+    {
+      "category": "Visas & Documents",
+      "tip": "Check passport validity requirements before every trip",
+      "description": "Many countries require 6 months of passport validity beyond your entry date (UAE, Thailand, Indonesia). Others require only 3 months. Check every time — these rules change. A passport expiring in 5 months may be fine for Germany but will get you denied boarding for Vietnam.",
+      "emoji": "🛂"
+    },
+    {
+      "category": "Visas & Documents",
+      "tip": "EU non-citizens must register with the EES system (launched April 2026)",
+      "description": "The EU's Entry/Exit System (EES) launched in April 2026 and records biometric data (fingerprints, face photo) for all non-EU visitors to the Schengen zone. Budget extra time for your first entry — the initial registration takes 5–10 minutes. ETIAS authorization for visa-exempt travelers is expected later in 2026.",
+      "emoji": "🇪🇺"
+    },
+    {
+      "category": "Visas & Documents",
+      "tip": "Apply for e-visas at least 2 weeks before travel",
+      "description": "E-visa systems for India, Vietnam, Australia, UAE, and Turkey can take 3–7 business days to process — sometimes longer during peak periods. Apply at least 2 weeks out. Always use the official government website, not third-party sites that charge double and add no value.",
+      "emoji": "🖥️"
+    },
+    {
+      "category": "Visas & Documents",
+      "tip": "Register with your country's embassy when visiting high-risk areas",
+      "description": "The US State Department's STEP program, the UK's FCDO registration, and equivalents for other countries let your embassy contact you in emergencies and helps locate you in a crisis. Free, takes 5 minutes, and could matter enormously.",
+      "emoji": "🏛️"
+    },
+    {
+      "category": "Visas & Documents",
+      "tip": "Carry printed copies of key documents as backup",
+      "description": "Despite digital backups, border guards in some countries (Morocco, India, Vietnam) still ask for printed documents. A printed hotel booking and return ticket printed on paper can accelerate border entry and prevent questioning about your intended length of stay.",
+      "emoji": "🖨️"
+    },
+    {
+      "category": "Connectivity",
+      "tip": "Buy an eSIM before you land — Airalo covers 200+ countries",
+      "description": "Airalo sells regional or country eSIM data plans starting at $5–8. You install it before departure, it activates automatically when you land, and you have data immediately without queuing for a local SIM. Their 'Discover+ Global' plan covers 88+ countries. Install on iOS 12.1+ or Android 9+.",
+      "emoji": "📱"
+    },
+    {
+      "category": "Connectivity",
+      "tip": "Download WhatsApp as your primary communication tool abroad",
+      "description": "WhatsApp works over Wi-Fi and data in 180+ countries, making international calls and messages free. Most guesthouses, guides, tour operators, and locals worldwide use it as a primary contact channel. Much more practical than SMS internationally.",
+      "emoji": "💬"
+    },
+    {
+      "category": "Connectivity",
+      "tip": "Use a VPN to access home content and secure public Wi-Fi",
+      "description": "A VPN (ExpressVPN, NordVPN, or Mullvad) encrypts your traffic on hotel and café Wi-Fi and lets you access streaming services from home. Essential in countries with heavy internet filtering like China, UAE, and Turkey. Download and subscribe before you travel.",
+      "emoji": "🔒"
+    },
+    {
+      "category": "Connectivity",
+      "tip": "Pre-download Spotify playlists, Netflix shows, and Google Maps offline",
+      "description": "Before every trip, spend 20 minutes: download offline Google Maps for your destination, download Spotify playlists, download 3–4 Netflix episodes, and grab Google Translate language packs. This covers entertainment and navigation for most scenarios without data.",
+      "emoji": "⬇️"
+    },
+    {
+      "category": "Connectivity",
+      "tip": "Turn off roaming and use Wi-Fi calling instead of your carrier's international rates",
+      "description": "Enable Wi-Fi calling on your home phone (available on iOS and Android settings) so your regular number works over any Wi-Fi without using data or paying roaming rates. Available with most major carriers and works at hotels, cafés, and hostels.",
+      "emoji": "📶"
+    },
+    {
+      "category": "Weather",
+      "tip": "Use the 'feels like' temperature — not the actual temperature — for planning",
+      "description": "Humidity and wind dramatically change how weather feels. In Bangkok, 32°C (90°F) at 80% humidity feels like 42°C (108°F). Use the Feels Like metric in apps like Weather.com, Windy, or Apple Weather when planning outdoor activities and packing clothes.",
+      "emoji": "🌡️"
+    },
+    {
+      "category": "Weather",
+      "tip": "Use Windy.com for detailed weather forecasting — especially for coastal and mountainous areas",
+      "description": "Windy.com visualizes wind, rain, temperature, and waves in animated layers. Essential for sailing, hiking, beach vacations, and mountain trekking. Far more useful than standard weather apps for understanding real conditions on a specific day.",
+      "emoji": "🌬️"
+    },
+    {
+      "category": "Weather",
+      "tip": "Travel during shoulder season — better weather, fewer crowds, lower prices",
+      "description": "Shoulder season (one month before or after peak) typically offers the best overall experience in most destinations: 20–50% lower hotel rates, short or no queues at major sights, more genuine local interaction, and weather that's often nearly identical to peak season.",
+      "emoji": "📅"
+    },
+    {
+      "category": "Weather",
+      "tip": "Pack a lightweight packable rain jacket regardless of forecast",
+      "description": "Weather forecasts are unreliable beyond 3 days, especially in tropical and mountain regions. A packable rain jacket (Patagonia Houdini, Marmot PreCip) compresses to the size of a water bottle. There is no good reason to be caught in rain without one.",
+      "emoji": "🧥"
+    },
+    {
+      "category": "Weather",
+      "tip": "Understand the monsoon calendar for Southeast Asia",
+      "description": "Southeast Asia's rain patterns are counter-intuitive: Thailand's west coast (Phuket) and east coast (Koh Samui) have opposite rainy seasons. When it's raining on one coast, the other is sunny. Know your specific destination's weather, not the country's general forecast.",
+      "emoji": "🌧️"
+    }
+  ],
+  "countries": [
+    {
+      "name": "United States",
+      "code": "US",
+      "region": "North America",
+      "currency": "USD ($)",
+      "language": "English",
+      "bestTime": "April–June and September–November for most regions; year-round for Hawaii and Florida",
+      "visa": "Visa Waiver Program (ESTA) for 42 countries; standard B-2 tourist visa for others. ESTA costs $21, approved in minutes, valid 2 years.",
+      "budget": "$120–250/day (mid-range); $60–80/day (budget hostels + cooking); $300+/day (luxury)",
+      "tips": [
+        {
+          "category": "Money & Budget",
+          "tip": "Tipping is not optional — 18–22% is the baseline",
+          "description": "In the US, tipping in restaurants, bars, taxis, Ubers, and hotel housekeeping is a de facto wage subsidy. 18% is the minimum for adequate service; 20% is standard. Skipping tips marks you as rude and in some states service workers earn below $3/hour on the assumption that tips will cover the rest."
+        },
+        {
+          "category": "Transport",
+          "tip": "Rent a car for anything outside major cities",
+          "description": "American public transit exists only in NYC, Chicago, San Francisco, and Boston with any reliability. Everywhere else — national parks, wine country, the South, small towns — a rental car is non-negotiable. Book through Costco Travel, AutoEurope, or directly via airline portals for best rates."
+        },
+        {
+          "category": "Money & Budget",
+          "tip": "State and national park passes pay off in 2–3 park visits",
+          "description": "The America the Beautiful Annual Pass ($80) covers entry for one vehicle at all 400+ national parks and federal lands for 12 months. It pays for itself at Yellowstone alone ($35/entry). Buy at the first park you visit or online."
+        },
+        {
+          "category": "Food",
+          "tip": "Happy hour (4–7 PM) is where American dining culture shines",
+          "description": "Most American bars and restaurants offer half-price appetizers and $5–8 cocktails during happy hour — a legitimate way to eat at $40/person restaurants for $15–20. This is how locals avoid the full dinner-price trap."
+        },
+        {
+          "category": "Health & Safety",
+          "tip": "US healthcare has no cap — buy comprehensive travel insurance",
+          "description": "A US emergency room visit for a broken arm costs $5,000–15,000. Without insurance, foreign visitors pay full price. Buy travel insurance with at least $100,000 medical coverage before entering the US. This is arguably the most important travel insurance purchase you can make."
+        },
+        {
+          "category": "Culture & Etiquette",
+          "tip": "Portions are enormous — share dishes or take leftovers",
+          "description": "American restaurant portions are typically 2–3x the EU standard. Sharing an appetizer and entree between two people is common and socially acceptable. Always ask for a 'to-go box' — taking leftovers is normal and not considered bad manners."
+        }
+      ]
+    },
+    {
+      "name": "France",
+      "code": "FR",
+      "region": "Europe",
+      "currency": "EUR (€)",
+      "language": "French",
+      "bestTime": "May–June and September–October (Paris & Loire); July–August (Provence, Riviera)",
+      "visa": "No visa required for US, UK, AU, CA citizens for stays up to 90 days in the Schengen Area. ETIAS authorization expected late 2026.",
+      "budget": "$120–180/day (mid-range Paris); $60–90/day (budget, regional France); $300+/day (luxury Paris)",
+      "tips": [
+        {
+          "category": "Food",
+          "tip": "Order the lunch 'formule' — same quality, half the dinner price",
+          "description": "Every French bistro and brasserie offers a 2- or 3-course lunch menu (formule or menu du midi) for €12–22. The same dinner would cost €35–60. The food is identical — it's a cultural convention. The most important meal in France is lunch."
+        },
+        {
+          "category": "Culture & Etiquette",
+          "tip": "Say 'Bonjour' every time you enter any establishment",
+          "description": "Walking into a French bakery, pharmacy, or boutique without saying 'Bonjour' is considered rude. The greeting signals social awareness. French people are not unfriendly — they simply require this basic acknowledgment before a transaction. It also helps enormously to add 'Merci, au revoir' when you leave."
+        },
+        {
+          "category": "Transport",
+          "tip": "The TGV network connects the whole country — skip domestic flights",
+          "description": "Paris to Marseille: 3h15 by TGV. Paris to Lyon: 2h. Paris to Bordeaux: 2h05. These high-speed trains beat flying when you factor in airport time. Book on SNCF Connect or Rail Europe. Ouigo (SNCF's budget brand) offers fares from €10."
+        },
+        {
+          "category": "Money & Budget",
+          "tip": "The Paris Museum Pass covers 50+ museums with no queuing",
+          "description": "The Paris Museum Pass (€52/2 days, €66/4 days, €78/6 days) covers the Louvre, Musée d'Orsay, Sainte-Chapelle, and 47 other museums with direct entry — no queuing. At the Louvre, this saves 45–90 minutes of standing in line."
+        },
+        {
+          "category": "Accommodation",
+          "tip": "Stay in arrondissements 11, 12, 18, 19 for authentic Paris at half the price",
+          "description": "Paris hotel prices in the 1st–4th arrondissements (tourist center) are 60–80% higher than the 11th (Bastille), 18th (Montmartre backside), or 20th (Belleville). The Métro connects everywhere within 20 minutes. You'll eat at real neighborhood restaurants, not tourist traps."
+        },
+        {
+          "category": "Food",
+          "tip": "Carry cash for markets, bakeries, and small bistros",
+          "description": "Despite modernization, many French marchés, fromageries, and neighborhood bistros are cash-only or have €15–20 minimum card transactions. Always carry €50–100 in small bills when exploring regional towns or Paris markets."
+        }
+      ]
+    },
+    {
+      "name": "Japan",
+      "code": "JP",
+      "region": "Asia",
+      "currency": "JPY (¥)",
+      "language": "Japanese",
+      "bestTime": "March–May (cherry blossom) and October–November (autumn foliage); avoid late July–August (extreme heat/humidity)",
+      "visa": "Visa-free for US, EU, UK, AU, CA, and 70+ other nations for up to 90 days. E-visa system expanding in 2025.",
+      "budget": "¥8,000–15,000/day ($55–100 USD, mid-range); ¥5,000–8,000/day (budget); ¥25,000+/day (luxury)",
+      "tips": [
+        {
+          "category": "Transport",
+          "tip": "Get an IC card (Suica/Pasmo) immediately at the airport",
+          "description": "Suica and Pasmo are rechargeable prepaid cards that work on every train, subway, and bus in Japan, plus 7-Eleven, Lawson, FamilyMart, and many restaurants. They eliminate the need to buy individual tickets (which require reading Japanese kanji). Load ¥3,000–5,000 to start."
+        },
+        {
+          "category": "Transport",
+          "tip": "Ship your luggage between hotels (takuhaibin) for ¥1,500–3,000",
+          "description": "Yamato Transport (the black cat service) and Sagawa Express offer next-day luggage delivery between hotels throughout Japan. Send your big bag ahead, travel light on the Shinkansen, and arrive at your next hotel to find your luggage already waiting. A uniquely Japanese travel superpower."
+        },
+        {
+          "category": "Food",
+          "tip": "Konbini (convenience stores) are genuinely excellent for food",
+          "description": "7-Eleven, FamilyMart, and Lawson in Japan stock fresh onigiri, karaage, hot ramen, excellent coffee, and seasonal specials — all for ¥150–700. Japanese convenience store food is genuinely good, safe, and available 24/7. It's not a compromise; it's a cultural institution."
+        },
+        {
+          "category": "Money & Budget",
+          "tip": "Japan is still largely cash-based — always carry yen",
+          "description": "Despite growing card acceptance in 2025, many smaller restaurants, temples, shrines, and rural guesthouses (ryokan) remain cash-only. Japan Post ATMs and 7-Eleven ATMs reliably accept foreign Visa/Mastercard cards. Withdraw ¥20,000–30,000 at once to minimize ATM trips."
+        },
+        {
+          "category": "Culture & Etiquette",
+          "tip": "Never tip — it can cause embarrassment or offense",
+          "description": "Tipping is not customary in Japan and can be confusing or mildly offensive in the wrong context. Service quality is a point of professional pride, not a negotiation. The price on the menu is the total price. If you want to express gratitude, a sincere 'arigatou gozaimashita' is perfect."
+        },
+        {
+          "category": "Accommodation",
+          "tip": "Book a ryokan (traditional inn) for at least one night",
+          "description": "A ryokan stay (futon on tatami, kaiseki dinner, communal onsen) is a core Japanese cultural experience that costs $80–200 per person. Book through Jalan.net (Japanese platform, better prices) or Japanican.com. Ryokans in smaller cities like Hakone or Kinosaki Onsen are better value than Kyoto."
+        },
+        {
+          "category": "Health & Safety",
+          "tip": "Tattoos are still banned in most onsen — research before visiting",
+          "description": "Traditional onsen (hot spring baths) prohibit visible tattoos as a rule rooted in historical association with organized crime. Some onsen are becoming tattoo-friendly, but always check before booking. 'Tattoo-friendly onsen' is a specific searchable category on Japanese booking sites."
+        }
+      ]
+    },
+    {
+      "name": "Italy",
+      "code": "IT",
+      "region": "Europe",
+      "currency": "EUR (€)",
+      "language": "Italian",
+      "bestTime": "April–June and September–October; avoid August (peak heat and crowds), especially in Rome and Florence",
+      "visa": "Schengen visa-free for US, UK, AU, CA, and most Western nations. ETIAS expected late 2026.",
+      "budget": "$80–150/day (mid-range); $40–70/day (budget); $250+/day (luxury Amalfi/Venice)",
+      "tips": [
+        {
+          "category": "Food",
+          "tip": "Eat at the bar (standing) for authentic, cheap Italian breakfast",
+          "description": "In Italy, breakfast (colazione) is a quick espresso and cornetto at the bar — standing. Table service at the same café typically costs 2–3x more. A proper Italian bar breakfast costs €2–3.50. Sit-down tourist breakfasts at €10–18 are a tourist trap."
+        },
+        {
+          "category": "Culture & Etiquette",
+          "tip": "Cover up for churches — they will turn you away",
+          "description": "Italian churches (including the Vatican, Duomo di Milano, Santa Croce in Florence) strictly enforce dress codes: no bare shoulders or knees. Guards at the door will refuse entry. A pashmina or sarong in your bag solves this for men and women."
+        },
+        {
+          "category": "Money & Budget",
+          "tip": "The 'coperto' and 'servizio' charges are legal and standard",
+          "description": "Italian restaurants charge a coperto (cover charge) of €1–4 per person for bread and table setting — this is normal and legal. A separate servizio (service charge) of 10–15% may also appear. Do not confuse these with tipping — small extra tips (€1–2 per person) are appreciated but optional."
+        },
+        {
+          "category": "Transport",
+          "tip": "Validate your train ticket before boarding — fines are €50–200",
+          "description": "Italian regional trains require you to stamp/validate your ticket at the yellow or green machines on the platform before boarding. Even if you bought a ticket, failing to validate is a fineable offense. Trenitalia high-speed tickets (Frecce) are pre-validated, but regional tickets are not."
+        },
+        {
+          "category": "Accommodation",
+          "tip": "Stay in agriturismo (farm stays) for the best food and value in rural Italy",
+          "description": "Agriturismo are working farms required by Italian law to grow at least 30% of what they serve. Breakfast is homemade, dinners are multi-course affairs of local produce, and rooms are often historic farmhouses. Prices: €60–120/night including dinner — far better value than rural hotels."
+        },
+        {
+          "category": "Money & Budget",
+          "tip": "Book Venice and Amalfi Coast accommodation 4–6 months ahead",
+          "description": "Venice and Positano have the most constrained accommodation supply of any major European destination. Prices double between 90-day and 30-day booking windows. For July–August, 6 months out is not excessive. Consider Chioggia (€45 by ferry from Venice) or Salerno (trains to Amalfi) as base alternatives."
+        }
+      ]
+    },
+    {
+      "name": "Spain",
+      "code": "ES",
+      "region": "Europe",
+      "currency": "EUR (€)",
+      "language": "Spanish (Castilian); Catalan in Barcelona; Basque in San Sebastián",
+      "bestTime": "April–June and September–October (all regions); avoid August in Madrid and Barcelona (extreme heat, 38–42°C)",
+      "visa": "Schengen visa-free for US, UK, AU, CA and most Western nations for up to 90 days.",
+      "budget": "$70–130/day (mid-range); $35–60/day (budget); $200+/day (luxury Barcelona/Ibiza)",
+      "tips": [
+        {
+          "category": "Food",
+          "tip": "Follow Spanish meal times — lunch is 2–4 PM, dinner is 9–11 PM",
+          "description": "Eating dinner before 9 PM in Spain marks you as a tourist. Locals eat lunch (the main meal) between 2 and 4 PM and dinner rarely before 9:30 PM. Restaurants outside tourist areas may not even open for dinner until 8:30 PM. Sync your schedule and you'll eat with locals, not other tourists."
+        },
+        {
+          "category": "Food",
+          "tip": "The menú del día is the best meal deal in Europe",
+          "description": "Every Spanish restaurant is required by tradition (and sometimes law) to offer a menú del día at lunch: 2–3 courses, bread, wine or water for €10–15. Even in expensive Barcelona, a proper menú del día exists. It is always the better option over ordering à la carte at lunch."
+        },
+        {
+          "category": "Transport",
+          "tip": "Renfe's AVE high-speed trains are punctual and faster than flying city-to-city",
+          "description": "Madrid–Seville: 2h30. Madrid–Barcelona: 2h30. Madrid–Valencia: 1h40. Spain's AVE network rivals Japan's Shinkansen for speed and punctuality. Book on renfe.com or the Renfe app at least 2 weeks out for cheapest prices (some fares from €15)."
+        },
+        {
+          "category": "Money & Budget",
+          "tip": "Book Sagrada Família and Alhambra tickets 2–4 weeks ahead — they sell out",
+          "description": "The Sagrada Família and the Alhambra in Granada have strict daily visitor caps. Both regularly sell out weeks in advance during high season. Buy official tickets directly from the official website; third-party resellers charge 20–40% more."
+        },
+        {
+          "category": "Culture & Etiquette",
+          "tip": "San Sebastián (Donostia) has the highest Michelin-star density in the world",
+          "description": "San Sebastián in the Basque Country has more Michelin stars per capita than anywhere else on earth, plus a legendary pintxos (Basque tapas) bar culture in the Old Town. A full evening of hopping pintxos bars costs €20–35 per person and rivals any €200 tasting menu."
+        },
+        {
+          "category": "Accommodation",
+          "tip": "Book paradores — Spain's state-run castles and monasteries turned hotels",
+          "description": "Spain's Paradores network comprises 97 historic properties — castles, monasteries, convents, palaces — in extraordinary locations. Prices are often €90–170/night, which is mid-range by European standards for what is genuinely a unique experience. Book directly on parador.es."
+        }
+      ]
+    },
+    {
+      "name": "Thailand",
+      "code": "TH",
+      "region": "Southeast Asia",
+      "currency": "THB (฿)",
+      "language": "Thai",
+      "bestTime": "November–April (dry season, whole country); avoid May–October rainy season on west coast (Phuket, Krabi); east coast (Koh Samui) is dry June–September",
+      "visa": "60-day visa exemption for US, EU, UK, AU and 93 other nationalities as of 2024 (extended from 30 days). Extendable by 30 days at immigration for 1,900 THB.",
+      "budget": "700–1,500 THB/day ($20–45 USD, budget); 1,500–3,500 THB/day (mid-range); 5,000+ THB/day (luxury)",
+      "tips": [
+        {
+          "category": "Transport",
+          "tip": "Use Grab for taxis — it eliminates all metered taxi negotiation",
+          "description": "Grab (Southeast Asia's Uber) shows you the exact fare before you book, meaning zero negotiation with drivers and zero being taken on long routes. Available in Bangkok, Chiang Mai, Phuket, and all major Thai cities. Always cheaper and more transparent than street taxis."
+        },
+        {
+          "category": "Food",
+          "tip": "Eat at markets and stalls where locals eat — not Khao San Road",
+          "description": "Khao San Road and tourist areas inflate prices 3–5x and often serve bastardized versions of Thai food. A bowl of boat noodles or pad see ew at a fresh market costs 50–80 THB ($1.50–2.30). Or Jeh O Chula — a night market spot in Bangkok that Instagram food travelers seek out specifically."
+        },
+        {
+          "category": "Culture & Etiquette",
+          "tip": "Never touch someone's head or point your feet at people or temples",
+          "description": "The head is considered sacred and the feet profane in Thai culture. Never touch someone's head, even a child's, without permission. Pointing feet at a Buddha image, altar, or another person is deeply disrespectful. In temples, sit on your knees or cross-legged with feet tucked away."
+        },
+        {
+          "category": "Culture & Etiquette",
+          "tip": "Cover up at temples — they will turn you away",
+          "description": "Wat Phra Kaew (Grand Palace), Doi Suthep in Chiang Mai, and virtually all Thai Buddhist temples require covered shoulders and knees. Some provide wraps for rent/loan. A lightweight sarong in your bag is a permanent solution."
+        },
+        {
+          "category": "Health & Safety",
+          "tip": "Only buy alcohol at licensed venues — counterfeit liquor is a real risk in Koh Phi Phi and party islands",
+          "description": "Counterfeit spirits (especially whiskey and vodka) with methanol instead of ethanol have caused deaths and serious injury in tourist areas including Koh Phi Phi, Koh Tao, and Koh Samui. Buy alcohol from 7-Eleven, reputable bars, or branded bottles with intact seals only."
+        },
+        {
+          "category": "Money & Budget",
+          "tip": "The north (Chiang Mai, Pai, Chiang Rai) is 30–50% cheaper than beach islands",
+          "description": "A guesthouse in Chiang Mai costs 300–600 THB/night; the same standard on Koh Lanta or Koh Samui costs 800–2,000 THB. Food and transport costs follow the same ratio. If budget matters, northern Thailand provides a richer cultural experience for significantly less money."
+        }
+      ]
+    },
+    {
+      "name": "United Kingdom",
+      "code": "GB",
+      "region": "Europe",
+      "currency": "GBP (£)",
+      "language": "English",
+      "bestTime": "May–September (most weather-reliable); June–August for Highlands; Edinburgh Festival in August",
+      "visa": "Visa-free for US, EU, CA, AU and many others for up to 6 months. UK Electronic Travel Authorisation (ETA) required for many nationalities from 2025 — apply online, costs £10.",
+      "budget": "£80–150/day (mid-range London); £40–70/day (budget, regional UK); £200+/day (London luxury)",
+      "tips": [
+        {
+          "category": "Money & Budget",
+          "tip": "London's museums are free — use this aggressively",
+          "description": "The British Museum, Natural History Museum, V&A, National Gallery, Tate Modern, Science Museum, and 15+ other major London museums are permanently free. This is not well-known globally and represents extraordinary cultural access. Budget no museum entry fees for central London."
+        },
+        {
+          "category": "Transport",
+          "tip": "Use an Oyster card or contactless payment — never buy paper tickets in London",
+          "description": "Paper single tickets in London's Tube cost 2–3x more than contactless card or Oyster card fares. The daily cap on contactless/Oyster means you automatically stop paying once you've hit the daily maximum — making it impossible to overpay. Tap your debit card directly for simplest setup."
+        },
+        {
+          "category": "Food",
+          "tip": "Borough Market, Brixton Market, and street food markets beat tourist restaurants",
+          "description": "London has exceptional street food and market culture: Borough Market (London Bridge), Maltby Street, Brixton Village, Whitecross Street Market, and Broadway Market all offer world-class food from £6–14. Far better than the overpriced Covent Garden and Southbank tourist restaurants."
+        },
+        {
+          "category": "Accommodation",
+          "tip": "Stay in a Travelodge or Premier Inn to get great value in the UK",
+          "description": "Premier Inn and Travelodge are the UK's equivalent of Japan's business hotels — clean, well-located, and competitively priced at £55–95/night including breakfast (Premier Inn). They consistently out-rate 3-star independents on price-to-quality. Book 3–4 weeks ahead for best rates."
+        },
+        {
+          "category": "Transport",
+          "tip": "Split ticketing saves 20–60% on UK train journeys",
+          "description": "UK rail fares are often cheaper if you buy two tickets for segments of the same journey (e.g., London to Glasgow cheaper as London to Preston + Preston to Glasgow). Use SplitMyFare.co.uk or Trainsplit.com to find these splits automatically. You stay on the same train."
+        },
+        {
+          "category": "Culture & Etiquette",
+          "tip": "Queue — always, and silently",
+          "description": "Queuing is a near-sacred British social institution. Jumping a queue or even appearing to is one of the most reliable ways to cause genuine British hostility. Join the back of every queue, even if it seems disorganized. There is always a queue."
+        }
+      ]
+    },
+    {
+      "name": "Germany",
+      "code": "DE",
+      "region": "Europe",
+      "currency": "EUR (€)",
+      "language": "German",
+      "bestTime": "May–October (warm, festivals); December for Christmas markets; avoid February–March (grey and cold with little tourism infrastructure)",
+      "visa": "Schengen visa-free for US, UK, AU, CA and most Western nations.",
+      "budget": "€70–140/day (mid-range); €35–60/day (budget hostels/self-catering); €200+/day (luxury Berlin/Munich)",
+      "tips": [
+        {
+          "category": "Transport",
+          "tip": "The €49 Deutschlandticket covers all regional trains and transit nationwide",
+          "description": "Germany's €49/month Deutschlandticket (Deutschland-Ticket) covers unlimited travel on all regional trains, S-Bahn, U-Bahn, trams, and buses across the entire country. The most powerful value transport pass in Europe for slow travelers. Buy month-to-month; cancel anytime via most transit apps."
+        },
+        {
+          "category": "Food",
+          "tip": "Döner kebab in Berlin is not Turkish food — it's a Berlin invention",
+          "description": "The döner kebab as sold in Berlin (thick flatbread, roasted meat shaved from a spit, fresh vegetables, sauces) was invented by Turkish immigrants in West Berlin in the 1970s. It's a Berlin street food institution at €4–7 and leagues better than any sit-down restaurant equivalent."
+        },
+        {
+          "category": "Culture & Etiquette",
+          "tip": "Jaywalking is socially frowned upon — Germans wait for the green light even at empty roads",
+          "description": "Germans (especially older Berliners) follow pedestrian crossing rules rigorously, and crossing on red — even with no traffic — earns genuine disapproval and occasionally verbal reprimand. This is more social etiquette than law, but it's a consistent signal that you're not reading the room."
+        },
+        {
+          "category": "Money & Budget",
+          "tip": "Cash is still king in Germany — carry euros",
+          "description": "Germany lags significantly behind the EU average on card acceptance. Many bakeries, small restaurants, and markets are cash-only. The phrase 'Nur Barzahlung' (cash only) is still common. Always carry €50–100 in cash when exploring smaller towns or non-chain restaurants."
+        },
+        {
+          "category": "Food",
+          "tip": "Tap water is safe and free everywhere — just ask for 'Leitungswasser'",
+          "description": "German tap water meets the highest potable water standards in the EU. Restaurants will serve it free if asked for 'ein Glas Leitungswasser, bitte.' Many restaurants default to serving expensive sparkling water (Mineralwasser) to tourists — specifically asking for tap avoids this charge."
+        },
+        {
+          "category": "Accommodation",
+          "tip": "Book Oktoberfest accommodation 10–12 months in advance",
+          "description": "Munich hotels for Oktoberfest (late September–early October) sell out by November of the previous year and prices triple. If attending, book in January at the very latest. Alternatively, stay in Augsburg (30 min by train) where prices remain normal."
+        }
+      ]
+    },
+    {
+      "name": "Mexico",
+      "code": "MX",
+      "region": "North America",
+      "currency": "MXN (MX$)",
+      "language": "Spanish",
+      "bestTime": "November–April (dry season, most regions); Yucatán year-round but avoid July–October for hurricane risk",
+      "visa": "No visa required for US, EU, UK, CA, AU and most Western nations for up to 180 days (tourist card/FMM required, now digital). Some nationalities require a visa.",
+      "budget": "MX$800–1,800/day ($45–100 USD, mid-range); MX$400–800/day (budget); MX$3,000+/day (luxury Tulum/Cabo)",
+      "tips": [
+        {
+          "category": "Health & Safety",
+          "tip": "Don't drink tap water anywhere in Mexico — ever",
+          "description": "Mexico City and all Mexican cities have non-potable tap water. Drink only bottled (agua purificada) or filtered water. Buy a 20L garrafón at any OXXO or tienda for MX$25–40 — far cheaper than individual bottles. Use bottled water to brush teeth too."
+        },
+        {
+          "category": "Food",
+          "tip": "Tacos al pastor from street carts at 2 AM are peak Mexico City culture",
+          "description": "The best tacos in Mexico City come from street taquería stands operating from evening to dawn. Look for the trompo (vertical spit) — that's the al pastor. Three tacos at MX$25–40 each is a full meal. Locals eat standing; join them."
+        },
+        {
+          "category": "Transport",
+          "tip": "Use ADO buses for inter-city travel — they're safe, comfortable, and cheap",
+          "description": "ADO is Mexico's premier long-distance bus company with air-conditioning, assigned seats, and security protocols. Covers all major routes including Mexico City–Oaxaca, Mexico City–Mérida, and Cancún–Tulum. Book at ado.com.mx. Far better than economy colectivos for long journeys."
+        },
+        {
+          "category": "Money & Budget",
+          "tip": "Pay in pesos, not dollars — the dollar tax is 10–20%",
+          "description": "Vendors and restaurants in tourist areas (Tulum, Cancún, Cabo) list prices in USD but the exchange rate they offer is typically 15–25% worse than the bank rate. Withdraw pesos from ATMs (Banorte and HSBC have better rates than airport exchange), pay in pesos, and save real money."
+        },
+        {
+          "category": "Culture & Etiquette",
+          "tip": "Oaxaca, Mérida, and San Cristóbal are culturally richer than Cancún at half the cost",
+          "description": "Mexico's all-inclusive resort coast (Cancún, Playa del Carmen, Tulum) is a very different country from cultural Mexico. Oaxaca offers the world's best mole and mezcal, pre-Columbian ruins, and textile markets. Mérida offers Mayan culture. San Cristóbal has colonial architecture and indigenous markets. Far cheaper, far more memorable."
+        },
+        {
+          "category": "Health & Safety",
+          "tip": "Use official taxis (sitio taxis) or Uber, not street hails in cities",
+          "description": "Express kidnapping by fake taxis is a documented risk in Mexico City. Never hail a random taxi on the street. Use Uber (works throughout Mexico), Didi, or call a radio taxi (sitio). Your hotel will always arrange a trustworthy sitio taxi."
+        }
+      ]
+    },
+    {
+      "name": "Turkey",
+      "code": "TR",
+      "region": "Europe / Middle East",
+      "currency": "TRY (₺)",
+      "language": "Turkish",
+      "bestTime": "April–June and September–October (Istanbul and Aegean coast); avoid July–August (extreme heat, 35–42°C on Aegean)",
+      "visa": "US, EU, UK citizens can obtain an e-Visa at evisa.gov.tr for $50–80 (varies by nationality), valid 180 days with 90-day stay. Some EU nationalities (German, French) have visa-free access — check officially.",
+      "budget": "$40–80/day (mid-range); $20–40/day (budget); $150+/day (luxury Istanbul/Bodrum)",
+      "tips": [
+        {
+          "category": "Money & Budget",
+          "tip": "Turkey's currency fluctuation makes it exceptional value — always use local ATMs",
+          "description": "The Turkish lira has experienced significant devaluation, making Turkey one of Europe's best-value destinations for foreign currency holders. Withdraw TRY from local ATMs (IsBank, Garanti are reliable), never exchange at tourist kiosks. $50 USD buys €45 worth of experience."
+        },
+        {
+          "category": "Food",
+          "tip": "Eat at lokanta (local lunch restaurants) — fixed-price, incredible value",
+          "description": "Lokanta are Turkish home-style lunch restaurants serving slow-cooked dishes in trays, displayed at the counter. Point at what you want. A full 3-dish lunch with bread and ayran costs ₺150–300 ($5–10 USD). The antidote to tourist restaurant prices."
+        },
+        {
+          "category": "Culture & Etiquette",
+          "tip": "Remove shoes and cover heads at mosques — dress respectfully",
+          "description": "Entry to the Blue Mosque, Süleymaniye, and all active mosques requires covered heads for women, no shorts or bare shoulders for anyone, and shoes removed and bagged at the entrance. Scarves are provided at most major mosques. Visit outside prayer times for a calmer experience."
+        },
+        {
+          "category": "Transport",
+          "tip": "Istanbul has two continents and one card (Istanbulkart) covers it all",
+          "description": "The Istanbulkart (rechargeable transit card) covers metro, tram, bus, funicular, ferry, and the Bosphorus commuter ferries — all connected across both the European and Asian sides. Buy at any metro station for ₺100 (refundable deposit) and load credit. Reduces per-ride cost by 30%."
+        },
+        {
+          "category": "Food",
+          "tip": "Cappadocia's cave hotels are worth the splurge for one night",
+          "description": "Staying in a cave hotel (kaya evi) carved into volcanic tufa rock in Göreme, Üçhisar, or Uçhisar starts at $80/night mid-range. A hot air balloon over Cappadocia at sunrise ($150–200) is genuinely one of the great travel experiences globally. Book 4–6 weeks ahead in peak season."
+        }
+      ]
+    },
+    {
+      "name": "Greece",
+      "code": "GR",
+      "region": "Europe",
+      "currency": "EUR (€)",
+      "language": "Greek",
+      "bestTime": "May–June and September–October (best overall); avoid July–August (extreme heat, peak prices and crowds in Santorini/Mykonos)",
+      "visa": "Schengen visa-free for US, UK, AU, CA and most Western nations.",
+      "budget": "$70–130/day (mid-range islands); $40–70/day (budget mainland); $250+/day (luxury Santorini/Mykonos)",
+      "tips": [
+        {
+          "category": "Money & Budget",
+          "tip": "Skip Santorini's restaurants — the view adds 200% to the bill",
+          "description": "Dinner in Oia, Santorini with caldera view costs €60–120 per person. Identical quality food costs €25–40 per person in the town center or at the port. The infrastructure for the sunset photo experience is priced accordingly. Eat inland, have a drink with the view."
+        },
+        {
+          "category": "Accommodation",
+          "tip": "The Peloponnese, Naxos, and Sifnos offer authentic Greece at Mykonos quality for half the price",
+          "description": "Mykonos and Santorini are the most expensive Greek destinations. Naxos (biggest Cyclades island, own food production), Milos (dramatic geology, quiet), Sifnos (ceramic and gastronomy culture), and the Mani Peninsula are comparably beautiful with half the crowds and 40–60% lower accommodation prices."
+        },
+        {
+          "category": "Food",
+          "tip": "Seek out tavernas with no English menu displayed outside — your best food signal",
+          "description": "Greek tavernas with laminated picture menus displayed at the door cater to tourists. Walk one block further and find the unmarked door with locals eating — ask 'ti ehete simera?' (what do you have today?) and eat whatever the cook says is fresh."
+        },
+        {
+          "category": "Transport",
+          "tip": "Ferry schedules and speeds vary wildly — book fast ferries for island hopping",
+          "description": "Greek Ferries range from 8-hour overnight giants (ANEK, Blue Star) to 3-hour fast catamarans (SeaJets, Hellenic Seaways). The same route can take 3 or 8 hours depending on the vessel. Check the ship type on Ferryhopper.com (the best Greek ferry booking platform) before buying."
+        },
+        {
+          "category": "Culture & Etiquette",
+          "tip": "The Acropolis Museum is more interesting than the Acropolis itself",
+          "description": "The Acropolis Museum at the base of the hill houses the original friezes, caryatids, and pediment sculptures in museum conditions — you see them close-up. The hilltop Acropolis site has replicas and wind. Visit both, but budget more time for the museum. Combination ticket saves money."
+        }
+      ]
+    },
+    {
+      "name": "Indonesia (Bali)",
+      "code": "ID",
+      "region": "Southeast Asia",
+      "currency": "IDR (Rp)",
+      "language": "Indonesian (Bahasa Indonesia); Balinese in Bali",
+      "bestTime": "April–October (dry season, best for Bali); avoid November–March (rainy season with daily downpours)",
+      "visa": "30-day visa-on-arrival available at Bali's Ngurah Rai airport for $35 USD (most nationalities). Can be extended to 60 days at immigration. E-visa also available online.",
+      "budget": "Rp 300,000–700,000/day ($20–45 USD, budget); Rp 700,000–2,000,000/day (mid-range); $150+/day (luxury villa Seminyak/Ubud)",
+      "tips": [
+        {
+          "category": "Transport",
+          "tip": "Rent a scooter in Bali only if you're experienced — or use Gojek/Grab",
+          "description": "Scooter rental in Bali costs Rp 70,000–100,000/day and is the most flexible way to explore. However, Bali's roads have no lane discipline, potholes, and steep rice terrace roads. If you're not an experienced rider, Gojek (Bali's dominant ride-hailing app) is safer and nearly as cheap."
+        },
+        {
+          "category": "Culture & Etiquette",
+          "tip": "Respect Balinese Hindu ceremonies — always — they're everywhere",
+          "description": "Bali's Hindu culture means daily offerings (canang sari), processions, temple ceremonies, and cremations happening throughout villages. Never step over or disturb offerings on the ground. If you encounter a procession, step to the side and wait respectfully. Dress modestly when entering any temple."
+        },
+        {
+          "category": "Accommodation",
+          "tip": "Private villas with pools cost the same as mid-range hotels if booked right",
+          "description": "A private villa with a pool in Canggu or Ubud for 2 people costs $80–150/night — comparable to a 3-star hotel room. Search on Airbnb or book directly via Bali villa rental sites (BaliVillas.com) for best rates. Avoid peak: July–August and Christmas–New Year."
+        },
+        {
+          "category": "Health & Safety",
+          "tip": "Never buy alcohol from unlicensed street vendors — methanol poisoning risk",
+          "description": "Counterfeit arak (rice spirits) and fake branded spirits in tourist areas have caused deaths in Bali. Only buy alcohol from 7-Eleven, Circle K, licensed bars, or branded hotels. This is not an exaggeration — it has killed tourists specifically in Kuta and Seminyak."
+        },
+        {
+          "category": "Food",
+          "tip": "Eat babi guling (suckling pig) in Ubud, not in tourist warung",
+          "description": "Babi guling — Bali's ceremonial roasted suckling pig — is best eaten at the specialized warungs (small restaurants) in Ubud's main market or Ibu Oka. A full plate with rice, crispy skin, blood sausage, and satay costs Rp 50,000–80,000 ($3–5 USD). Tourist resort versions cost 5x more and taste inferior."
+        }
+      ]
+    },
+    {
+      "name": "Portugal",
+      "code": "PT",
+      "region": "Europe",
+      "currency": "EUR (€)",
+      "language": "Portuguese",
+      "bestTime": "April–June and September–October (all regions); Algarve beaches are best July–September but crowded",
+      "visa": "Schengen visa-free for US, UK, AU, CA and most Western nations.",
+      "budget": "$60–110/day (mid-range Lisbon/Porto); $35–60/day (budget, rural Portugal); $200+/day (luxury Algarve)",
+      "tips": [
+        {
+          "category": "Food",
+          "tip": "A pastel de nata at Pastéis de Belém costs €1.30 and is worth the queue",
+          "description": "The original custard tart bakery in Belém, Lisbon, has been operating since 1837. The queue looks daunting but moves in 10 minutes, and you can see the tarts being made. Eat them hot, fresh, with cinnamon and powdered sugar, at the table inside. Every other pastel de nata is measured against this one."
+        },
+        {
+          "category": "Transport",
+          "tip": "Porto is a perfect 3-hour day trip from Lisbon by Alfa Pendular train",
+          "description": "The Alfa Pendular high-speed train runs Lisbon–Porto in 2h45 for €25–40 booked in advance on cp.pt. Porto is increasingly excellent — arguably more authentic than Lisbon currently — and makes a great base for the Douro Valley wine region."
+        },
+        {
+          "category": "Food",
+          "tip": "Tascas are Portugal's best-value restaurants — small, local, cash-preferred",
+          "description": "A tasca is a small, traditional Portuguese lunch restaurant serving prato do dia (plate of the day) for €8–12: typically fish or meat, rice, salad, bread, and a glass of wine or beer included. Identical to France's formule concept. The best food in Portugal is at a tasca with one daily option."
+        },
+        {
+          "category": "Accommodation",
+          "tip": "The Alentejo is Portugal's hidden gem — fewer tourists, better food, incredible wine",
+          "description": "While Lisbon and the Algarve are increasingly crowded, the Alentejo region (2 hours south of Lisbon) offers medieval white villages, cork forests, some of Europe's best red wines, and a slow-travel culture that feels like Portugal 20 years ago. Monte Alentejano country estates cost €80–150/night."
+        },
+        {
+          "category": "Money & Budget",
+          "tip": "The Lisboa Card covers transit and museum entry for €21–44",
+          "description": "The Lisboa Card (24h/48h/72h) includes unlimited metro, tram, and bus travel, plus free entry to 33 museums and monuments including Belém Tower and Jerónimos Monastery. It pays off in a day if you combine transit and museum visits."
+        }
+      ]
+    },
+    {
+      "name": "United Arab Emirates",
+      "code": "AE",
+      "region": "Middle East",
+      "currency": "AED (د.إ)",
+      "language": "Arabic (English widely spoken in Dubai/Abu Dhabi)",
+      "bestTime": "November–March (pleasant 20–30°C); avoid April–September (extreme heat, 40–48°C with humidity)",
+      "visa": "Visa-free for US, EU, UK, AU, CA and most Western nations for up to 30–90 days (varies by passport). Most arrivals get 30-day stamp on arrival.",
+      "budget": "$100–200/day (mid-range Dubai); $60–100/day (budget Abu Dhabi); $400+/day (luxury)",
+      "tips": [
+        {
+          "category": "Culture & Etiquette",
+          "tip": "Public displays of affection are illegal — even holding hands can cause issues in conservative areas",
+          "description": "The UAE has strict public decency laws. Kissing and intimate contact in public can result in arrest, fine, or deportation. Holding hands for couples is generally tolerated, but make conservative choices in malls, markets, and public areas outside tourist resort zones."
+        },
+        {
+          "category": "Transport",
+          "tip": "Dubai Metro is excellent and air-conditioned — use it over taxis in daytime heat",
+          "description": "Dubai's Metro (Red and Green lines) is clean, punctual, and fully air-conditioned — essential in summer heat. The Nol card covers Metro, bus, water taxis, and tram. Far cheaper than taxis for major corridors: airport to downtown, downtown to JBR, Mall of the Emirates to Burj Khalifa area."
+        },
+        {
+          "category": "Money & Budget",
+          "tip": "Dubai's biggest attractions have free or very affordable public access",
+          "description": "The Burj Khalifa's outdoor fountain show is free (Dubai Fountain, nightly at 6 PM and 8 PM). The Dubai Mall is free. The Gold and Spice Souks in Deira are free and extraordinary. The Dubai Frame observation deck (AED 50/$14) and Burj Al Arab afternoon tea (AED 500/$135) represent opposite ends of the price spectrum."
+        },
+        {
+          "category": "Food",
+          "tip": "Eat at Al Dhiyafah Road or Deira's Naif neighborhood for authentic Emirati and South Asian food",
+          "description": "Dubai's tourist restaurant scene is dominated by international hotel dining at $60–150/person. Deira's Naif area and Al Dhiyafah Road (Satwa) have decades-old Indian, Pakistani, and Emirati restaurants at $5–15/person. Ravi Restaurant on Al Satwa Road is legendary and costs almost nothing."
+        },
+        {
+          "category": "Culture & Etiquette",
+          "tip": "Dress conservatively in malls, mosques, and markets — not just at mosques",
+          "description": "The UAE enforces modesty standards outside beach and resort areas. Covered shoulders and knees are required at malls and shopping areas (not just religious sites). Abayas are not required for non-Muslim women, but revealing clothing in non-resort areas is technically an offense."
+        }
+      ]
+    },
+    {
+      "name": "Australia",
+      "code": "AU",
+      "region": "Pacific / Oceania",
+      "currency": "AUD (A$)",
+      "language": "English",
+      "bestTime": "September–November (spring, southern states); March–May (autumn, all regions); June–August (dry season, Queensland/Northern Territory)",
+      "visa": "Electronic Travel Authority (ETA) required for US, UK, CA and many other visa-exempt nationals — apply via the AUS ETA app, costs A$20. Visitor Visa (subclass 600) for others.",
+      "budget": "A$150–250/day ($100–170 USD, mid-range); A$80–120/day (budget hostels/van life); A$350+/day (luxury)",
+      "tips": [
+        {
+          "category": "Transport",
+          "tip": "Australia's distances require domestic flights — plan carefully",
+          "description": "Sydney to Perth is 4,000km — the same distance as London to Tehran. Without domestic flights, vast swaths of Australia are inaccessible in a standard trip. Qantas, Virgin Australia, and Jetstar connect major cities. Book 4–6 weeks ahead. Multi-city itineraries require air travel between major regions."
+        },
+        {
+          "category": "Accommodation",
+          "tip": "Working holiday visas let under-35s stay 1–3 years and fund travel by working",
+          "description": "Australia's Working Holiday Visa (subclass 417/462) is available to citizens of 45+ countries under age 35. Farm work in regional areas extends the visa. Thousands of young travelers fund multi-year Australian adventures by working harvest seasons in Queensland, picking fruit or cropping."
+        },
+        {
+          "category": "Health & Safety",
+          "tip": "Swim between the flags at patrolled beaches — always",
+          "description": "Australia's famous 'swim between the flags' rule exists because rip currents kill dozens of people annually, including strong swimmers. Surf Life Saving volunteers place red-and-yellow flags at the safest swimming corridor on every patrolled beach. Outside the flags: rips, rocks, and risk."
+        },
+        {
+          "category": "Food",
+          "tip": "BYO (bring your own wine) restaurants are common and dramatically reduce dining costs",
+          "description": "Many Australian restaurants (especially Italian and Greek) are licensed for BYO wine with a small corkage fee ($3–8/bottle). Buy a bottle at a Dan Murphy's or BWS bottle shop for A$12–20 and bring it to a $50/head restaurant — saving $30–50 vs. ordering from a wine list."
+        },
+        {
+          "category": "Transport",
+          "tip": "The Great Ocean Road and Uluru require a rental car — nothing else serves them properly",
+          "description": "Australia's iconic self-drive routes (Great Ocean Road in Victoria, Red Centre/Uluru in NT, The Gibb River Road in WA) cannot be done on public transport. Car hire is the only option. For Uluru, Alice Springs is the closest airport; for Great Ocean Road, Melbourne is the start."
+        },
+        {
+          "category": "Health & Safety",
+          "tip": "Sun protection is non-negotiable — UV index 10+ is normal in summer",
+          "description": "Australian summer UV index regularly exceeds 10 (scale tops at 11+), far above European summer peaks. SPF 50+ sunscreen applied every 2 hours, UV-blocking sunglasses, and a wide-brim hat are genuine health necessities, not tourist accessories. Melanoma rates in Australia are the highest in the world."
+        }
+      ]
+    },
+    {
+      "name": "India",
+      "code": "IN",
+      "region": "Asia",
+      "currency": "INR (₹)",
+      "language": "Hindi and English (official); 22+ scheduled languages; English widely spoken in cities and tourist areas",
+      "bestTime": "October–March (most of India, best weather); June–September is monsoon (beautiful but wet); avoid April–May (extreme heat 40–48°C in north)",
+      "visa": "e-Visa required for most nationalities including US, UK, EU, AU, CA. Apply at indianvisaonline.gov.in at least 4–7 days ahead. 30-day single-entry e-visa costs ~$25 USD; 1-year multi-entry ~$50.",
+      "budget": "₹2,000–5,000/day ($25–60 USD, mid-range); ₹800–2,000/day (budget guesthouses + street food); $100+/day (luxury heritage hotels)",
+      "tips": [
+        {
+          "category": "Transport",
+          "tip": "Book trains on IRCTC app 60 days in advance — tourist quota exists for last-minute booking",
+          "description": "Indian Railways tickets open 60 days before travel and popular routes sell out within hours. Use the IRCTC app or website. If trains are full, the 'Tourist Quota' (for foreign visitors) often releases seats closer to departure — ask at the reservation office at any major station."
+        },
+        {
+          "category": "Health & Safety",
+          "tip": "Never drink tap water anywhere in India — bottled water only",
+          "description": "India's tap water is not potable for visitors anywhere in the country. Drink only sealed bottled water (Bisleri, Kinley, Aquafina are reliable brands). Check the seal before accepting a bottle. Use bottled water to brush teeth. This rule is non-negotiable for avoiding severe gastrointestinal illness."
+        },
+        {
+          "category": "Transport",
+          "tip": "Use Uber and Ola for all city transport — never hail street taxis",
+          "description": "Uber and Ola operate in all major Indian cities with pre-fixed app pricing. Street taxi negotiation for foreigners almost always results in 3–5x the correct fare. Airport pre-paid taxi booths are the second safest option for arrivals. Never negotiate transport at airport arrivals halls."
+        },
+        {
+          "category": "Culture & Etiquette",
+          "tip": "Remove shoes at temples, use right hand for food and greeting, avoid left hand",
+          "description": "In Hindu and Sikh temples, shoes must be removed and stored (there are typically shoe deposit areas). The right hand is used for food, greeting, and passing objects — the left is traditionally associated with personal hygiene. Accepting food with your left hand causes mild offense."
+        },
+        {
+          "category": "Health & Safety",
+          "tip": "Start probiotics 5 days before arriving and pack oral rehydration salts",
+          "description": "Delhi belly (traveler's diarrhea) affects the majority of first-time visitors to India. Saccharomyces boulardii probiotics started before arrival, combined with scrupulous hand washing and only eating at busy, high-turnover restaurants, dramatically reduces risk. Oral rehydration salts (Electral in India) treat dehydration if it hits."
+        },
+        {
+          "category": "Accommodation",
+          "tip": "Heritage hotels (converted palaces, havelis, and forts) are extraordinary and often affordable",
+          "description": "India has hundreds of converted Rajasthani palaces (Udaipur), Mughal havelis (Jaipur, Jodhpur), hill station colonial bungalows (Shimla, Ooty), and Kerala backwater houseboats available at $50–200/night — compared to $500–2,000 in European equivalents. Book direct through the property for best rates."
+        }
+      ]
+    },
+    {
+      "name": "Vietnam",
+      "code": "VN",
+      "region": "Southeast Asia",
+      "currency": "VND (₫)",
+      "language": "Vietnamese",
+      "bestTime": "February–April (all of Vietnam at its best); Hanoi and north: October–April; Da Nang/Hội An: January–August; Ho Chi Minh City: November–April",
+      "visa": "E-visa available online at evisa.xuatnhapcanh.gov.vn for 90 days, multiple entry, costs ~$25 USD. Visa-free for citizens of some countries (UK, France, Germany, Italy, Spain, and others for 45 days). Check specifically for your passport.",
+      "budget": "500,000–1,200,000 VND/day ($20–50 USD, mid-range); 250,000–500,000 VND/day (budget traveler); $80+/day (luxury)",
+      "tips": [
+        {
+          "category": "Food",
+          "tip": "Pho for breakfast is the correct cultural approach — not dinner",
+          "description": "In Vietnam (especially Hanoi), pho is traditionally a breakfast dish. The best pho restaurants open at 5–7 AM and sell out by 10 AM. Pho Thin on Dinh Tien Hoang in Hanoi, Pho Hung in Ho Chi Minh City — these are morning institutions. A bowl costs 40,000–80,000 VND ($1.60–3.20)."
+        },
+        {
+          "category": "Transport",
+          "tip": "The Reunification Express train (Hanoi to Ho Chi Minh City) is a classic journey",
+          "description": "The overnight sleeper train from Hanoi to Da Nang or Da Nang to Ho Chi Minh City passes through some of Vietnam's most dramatic coastal scenery including the Hai Van Pass. A 4-berth soft sleeper costs $25–50 USD, covers the distance overnight, and saves accommodation costs. Book on Vietnam Railways or Baolau.com."
+        },
+        {
+          "category": "Money & Budget",
+          "tip": "Haggling is standard in markets but fixed in restaurants — know the difference",
+          "description": "In Vietnamese markets (Bến Thành, Đồng Xuân), haggling is expected and first prices are always inflated for foreigners. In restaurants and convenience stores, prices are fixed. Haggling at phở stalls is inappropriate. Start at 40% of the asked price in markets."
+        },
+        {
+          "category": "Food",
+          "tip": "Bánh mì at street stalls is one of the great sandwiches on earth and costs $1",
+          "description": "Vietnam's bánh mì (baguette fusion sandwich from French colonial influence) with pâté, pork, pickled vegetables, herbs, and chili costs 20,000–40,000 VND ($0.80–1.60) at street stalls. Bánh Mì Phương in Hội An is internationally recognized as the best. Eat one daily minimum."
+        },
+        {
+          "category": "Transport",
+          "tip": "Use Grab for all motorcycle and car trips — agree price before every ride",
+          "description": "Grab operates across Vietnam for GrabBike (motorcycle taxi) and GrabCar. In smaller towns or areas without Grab coverage, always agree on a price before getting in any vehicle. 'Xe ôm' (motorcycle taxis) will quote tourist prices; negotiating down 50% is normal."
+        }
+      ]
+    },
+    {
+      "name": "Morocco",
+      "code": "MA",
+      "region": "Africa / Middle East",
+      "currency": "MAD (دره)",
+      "language": "Darija Arabic and French; Berber (Tamazight) in rural areas; Spanish in north",
+      "bestTime": "March–May and September–November (comfortable temperatures, not too hot); avoid July–August in inland cities (45°C in Marrakech); Sahara best October–April",
+      "visa": "Visa-free for US, EU, UK, AU, CA and most Western nationals for up to 90 days.",
+      "budget": "MAD 300–600/day ($30–60 USD, mid-range); MAD 150–300/day (budget); $100+/day (luxury riads/desert camps)",
+      "tips": [
+        {
+          "category": "Accommodation",
+          "tip": "Stay in a riad inside the medina — they're disorienting to find but worth it",
+          "description": "Riads are traditional Moroccan houses with interior courtyards, converted into guesthouses. They look like blank walls from the outside — the magic is inside. Connect via WhatsApp before arrival and have your riad send someone to meet you at a medina gate. Budget riads from $35/night; luxury from $150."
+        },
+        {
+          "category": "Culture & Etiquette",
+          "tip": "Do not photograph people without permission — especially women and in markets",
+          "description": "Photography in Moroccan medinas is a sensitive area. Many Moroccans, particularly older women and people working, do not want to be photographed by strangers. Always ask ('Photo?') and accept refusal graciously. Some people may demand payment after you photograph them — discuss beforehand."
+        },
+        {
+          "category": "Transport",
+          "tip": "ONCF trains connect major cities reliably — use them over shared taxis for long routes",
+          "description": "Morocco's national rail network (ONCF) runs clean, comfortable trains between Marrakech, Casablanca, Rabat, Fès, and Tangier. The Marrakech–Casablanca journey takes 3h for MAD 100–130 ($10–13 USD). Cheaper and safer than grands taxis for city-to-city travel."
+        },
+        {
+          "category": "Food",
+          "tip": "The Djemaa el-Fna square food stalls at night are overpriced — eat one block away",
+          "description": "The food stalls in Marrakech's central square look spectacular but prices are 3–5x what the same food costs one street over, and quality is not always consistent. Walk to Rue Riad Zitoun el Kedim or to the Mellah (Jewish quarter market) for better food at local prices."
+        },
+        {
+          "category": "Health & Safety",
+          "tip": "Tap water is not potable — drink bottled or purified water everywhere",
+          "description": "Do not drink Moroccan tap water. Stick to sealed mineral water. Be careful with ice in cheap drinks establishments. High-end restaurants and riads typically use filtered water. Stomach issues from tap water or unfiltered ice are very common among first-time visitors."
+        },
+        {
+          "category": "Culture & Etiquette",
+          "tip": "Dress modestly — especially women, especially outside Marrakech tourist areas",
+          "description": "Morocco is a conservative Muslim country. Women wearing shorts or sleeveless tops in medinas and smaller towns attract unwanted attention and disrespect. Lightweight linen trousers and a long-sleeve shirt are the practical standard. In Marrakech's tourist-heavy central areas, standards are more relaxed, but modest is always respected."
+        }
+      ]
+    },
+    {
+      "name": "Colombia",
+      "code": "CO",
+      "region": "South America",
+      "currency": "COP ($)",
+      "language": "Spanish",
+      "bestTime": "December–March and July–August (dry seasons); Cartagena is good year-round; avoid April–May and October–November (rainy season)",
+      "visa": "Visa-free for US, EU, UK, AU, CA and most Western nationals for up to 90 days (extendable to 180 days at immigration).",
+      "budget": "COP 100,000–250,000/day ($25–60 USD, mid-range); COP 50,000–100,000/day (budget); $100+/day (luxury Cartagena/Medellín hotels)",
+      "tips": [
+        {
+          "category": "Health & Safety",
+          "tip": "Medellín and Bogotá are significantly safer than their historic reputation — but apply city smarts",
+          "description": "Both Medellín and Bogotá have transformed in terms of safety since the 1990s. El Poblado (Medellín) and Chapinero/Usaquén (Bogotá) are as safe as comparable Latin American neighborhoods. Avoid Bello (Medellín) and Kennedy/Ciudad Bolívar (Bogotá) at night. Use Uber or InDriver, not street taxis."
+        },
+        {
+          "category": "Transport",
+          "tip": "Medellín's Metro, cable cars, and gondolas are the best urban transport system in South America",
+          "description": "Medellín's integrated Metro-Cable system connects hillside comunas (previously inaccessible poor neighborhoods) to the city. A Metro + cable car ride costs 3,500–5,000 COP ($0.85–1.25 USD) and provides one of the most dramatic urban views in Latin America. Tourist attraction and transport in one."
+        },
+        {
+          "category": "Food",
+          "tip": "Eat a bandeja paisa — Colombia's national plate — at a local market restaurant",
+          "description": "Bandeja paisa is a massive platter: rice, red beans, chicharrón (fried pork belly), ground beef, egg, chorizo, arepa, and avocado. It costs COP 15,000–30,000 ($4–8 USD) at a mercado restaurant. The same plate costs COP 60,000–80,000 in tourist restaurants. Find a local market."
+        },
+        {
+          "category": "Money & Budget",
+          "tip": "Coffee at the origin: Salento and the Zona Cafetera offer the world's best filter coffee for $1",
+          "description": "Colombia's Coffee Triangle (Zona Cafetera) around Salento, Filandia, and Armenia is where specialty-grade Colombian coffee is grown. A freshly brewed cup at the farm costs COP 3,000–5,000 ($0.75–1.25 USD) — the same beans sell for $25/cup in New York."
+        },
+        {
+          "category": "Health & Safety",
+          "tip": "Never accept drinks from strangers in bars — scopolamine spiking exists",
+          "description": "Colombia has a documented risk of scopolamine (burundanga) — a drug slipped into drinks that causes memory loss and extreme suggestibility, enabling theft. This is more prevalent in Bogotá's bar scene. Never leave your drink unattended, and accept drinks only from the bartender directly."
+        }
+      ]
+    },
+    {
+      "name": "Peru",
+      "code": "PE",
+      "region": "South America",
+      "currency": "PEN (S/.)",
+      "language": "Spanish; Quechua in Andean regions",
+      "bestTime": "May–October (dry season, best for Machu Picchu and trekking); avoid November–April (rainy season, Inca Trail often closed in February)",
+      "visa": "Visa-free for US, EU, UK, AU, CA and most Western nationals for up to 90 days (extendable). Standard tourist entry stamp at immigration.",
+      "budget": "S/. 100–250/day ($25–65 USD, mid-range); S/. 50–100/day (budget); $120+/day (luxury Cusco/Sacred Valley)",
+      "tips": [
+        {
+          "category": "Health & Safety",
+          "tip": "Acclimatize in Cusco for 48 hours before hiking — altitude is 3,400m (11,150ft)",
+          "description": "Cusco sits at 3,400m — high enough to cause altitude sickness in most visitors. Spend 2 full days resting, drinking coca tea, eating light, and avoiding alcohol before any physical activity. Machu Picchu (2,430m) is actually lower; the risk is the ascent from sea level to Cusco. Ask a doctor about Diamox."
+        },
+        {
+          "category": "Transport",
+          "tip": "The Inca Rail to Machu Picchu must be booked 4–6 weeks ahead in dry season",
+          "description": "There is no road to Machu Picchu — access is by train (Peru Rail or Inca Rail from Aguas Calientes) or 4-day Inca Trail trek. Both sell out weeks ahead in May–October. Book Inca Trail permits 6 months ahead through a licensed agency (only 500 permits/day issued)."
+        },
+        {
+          "category": "Food",
+          "tip": "Lima has some of the world's best restaurants — at all price points",
+          "description": "Lima's Miraflores and Barranco neighborhoods host Central (ranked among world's top 5 restaurants), Maido, and Pujol-caliber dining. But also excellent: cevicherías in Lima Centro (S/. 25–45 for a full ceviche lunch), mercado restaurants at Surquillo Market (S/. 15–25), and anticucho street carts (S/. 8–12)."
+        },
+        {
+          "category": "Money & Budget",
+          "tip": "Machu Picchu entrance fees have tiered pricing — book the right slot",
+          "description": "Machu Picchu has introduced timed entry slots with capped daily visitors. Circuit 1 (classic views) and Circuit 2 (Inca drawbridge extension) have different pricing. Huayna Picchu and Machu Picchu Mountain require separate tickets booked months in advance. Buy only at the official site: machupicchu.gob.pe."
+        },
+        {
+          "category": "Food",
+          "tip": "Ceviche for lunch only — Peruvians never eat it for dinner",
+          "description": "In Peru, ceviche is a lunch dish — the country's answer to the French formule. The best cevicherías close by 4 PM. Eating ceviche for dinner at a restaurant is a tourist-menu adaptation. For the authentic experience (and far better quality), eat ceviche between 12 PM and 3 PM at a cevichería específica."
+        }
+      ]
+    }
+  ]
+}
