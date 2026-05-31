@@ -3,7 +3,7 @@
 import Link from 'next/link'
 import { useState } from 'react'
 import { useTheme } from './ThemeProvider'
-import { Globe, Map, Lightbulb, Menu, X, Sun, Moon, Compass, CheckSquare } from 'lucide-react'
+import { Globe, Map, Lightbulb, Menu, X, Sun, Moon, Compass, CheckSquare, MessageCircle, Route, Heart } from 'lucide-react'
 
 export default function Navbar() {
   const { theme, setTheme } = useTheme()
@@ -19,6 +19,9 @@ export default function Navbar() {
     { href: '/', label: 'Главная', icon: <Globe size={16} /> },
     { href: '/countries', label: 'Страны', icon: <Map size={16} /> },
     { href: '/checklist', label: 'Чеклист', icon: <CheckSquare size={16} /> },
+    { href: '/phrasebook', label: 'Разговорник', icon: <MessageCircle size={16} /> },
+    { href: '/routes', label: 'Маршруты', icon: <Route size={16} /> },
+    { href: '/favorites', label: 'Избранное', icon: <Heart size={16} /> },
     { href: '/tips', label: 'Лайфхаки', icon: <Lightbulb size={16} /> },
   ]
 

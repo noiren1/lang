@@ -1,0 +1,19 @@
+{
+  "name": "WanderGuide — Путеводитель путешественника",
+  "short_name": "WanderGuide",
+  "description": "Гайды, лайфхаки и советы для путешествий по всему миру",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0a0f",
+  "theme_color": "#6366f1",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/globe.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["travel", "lifestyle", "navigation"]
+}

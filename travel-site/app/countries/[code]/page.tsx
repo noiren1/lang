@@ -2,6 +2,8 @@ import { COUNTRIES, CATEGORIES } from '@/lib/data'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import TipCard from '@/components/TipCard'
+import CountryPhrasebook from '@/components/CountryPhrasebook'
+import FavoriteButton from '@/components/FavoriteButton'
 import { MapPin, Clock, Wallet, FileText, Globe, ArrowLeft } from 'lucide-react'
 
 export function generateStaticParams() {
@@ -46,9 +48,10 @@ export default async function CountryPage({ params }: { params: Promise<{ code: 
               <h1 className="text-4xl md:text-5xl font-black mb-3" style={{ color: 'var(--text-primary)' }}>
                 {country.name}
               </h1>
-              <p className="text-lg leading-relaxed max-w-2xl" style={{ color: 'var(--text-secondary)' }}>
+              <p className="text-lg leading-relaxed max-w-2xl mb-4" style={{ color: 'var(--text-secondary)' }}>
                 {country.description}
               </p>
+              <FavoriteButton countryCode={country.code} countryName={country.name} />
             </div>
           </div>
         </div>
@@ -87,6 +90,9 @@ export default async function CountryPage({ params }: { params: Promise<{ code: 
             ))}
           </div>
         </div>
+
+        {/* Phrasebook */}
+        <CountryPhrasebook countryCode={country.code} />
 
         {/* Tips by category */}
         <div>

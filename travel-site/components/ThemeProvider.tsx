@@ -14,7 +14,13 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
 
   useEffect(() => {
     const saved = localStorage.getItem('theme') as Theme | null
-    if (saved) setThemeState(saved)
+    if (saved) {
+      setThemeState(saved)
+    } else {
+      // Auto dark mode based on system preference
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
+      setThemeState(prefersDark ? 'dark' : 'light')
+    }
   }, [])
 
   const setTheme = (t: Theme) => {
